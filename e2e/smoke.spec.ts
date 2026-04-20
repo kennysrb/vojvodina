@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 test("SR home renders hero", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1 })).toContainText("CONES");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("VOJVODINA");
 });
 
 test("EN home is reachable and localized", async ({ page }) => {
