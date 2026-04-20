@@ -18,7 +18,7 @@ export async function generateMetadata({
 
 const TROPHIES = [
   {
-    category: { en: "National Championships", sr: "Nacionalna Takmičenja" },
+    category: { en: "National Championships", sr: "Nacionalna takmičenja" },
     total: 8,
     rows: [
       { competition: { en: "Championship of SR Yugoslavia", sr: "Prvenstvo SR Jugoslavije" }, count: 6, years: [1998, 1999, 2000, 2001, 2002, 2003] },
@@ -27,12 +27,18 @@ const TROPHIES = [
     ],
   },
   {
-    category: { en: "Regional Competitions", sr: "Regionalna Takmičenja" },
+    category: { en: "Regional Competitions", sr: "Regionalna takmičenja" },
     total: 1,
     rows: [
-      { competition: { en: "Pannonian League", sr: "Panonska Liga" }, count: 1, years: [2009] },
+      { competition: { en: "Pannonian League", sr: "Panonska liga" }, count: 1, years: [2009] },
     ],
   },
+];
+
+const MILESTONES = [
+  { value: "1957", label: { en: "Founded", sr: "Osnovani" } },
+  { value: "9×", label: { en: "National champions", sr: "Prvaci države" } },
+  { value: "2022", label: { en: "Last title", sr: "Poslednja titula" } },
 ];
 
 export default async function HistoryPage({
@@ -43,92 +49,97 @@ export default async function HistoryPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("history");
+  const l = locale as "en" | "sr";
 
   return (
     <>
       <PageHero eyebrow={t("eyebrow")} title={t("title")} description={t("heroDescription")} />
 
-      <div className="mx-auto max-w-container px-6 py-20 space-y-20">
+      {/* Milestone strip */}
+      <div className="border-b border-surface-700/60 bg-surface-800/40">
+        <div className="mx-auto max-w-container px-6">
+          <div className="grid grid-cols-3 divide-x divide-surface-700/60">
+            {MILESTONES.map((m) => (
+              <div key={m.value} className="py-8 px-6 flex flex-col items-center gap-1">
+                <span className="font-display text-4xl md:text-5xl text-vojvodina-red">{m.value}</span>
+                <span className="font-heading text-xs uppercase tracking-[0.2em] text-surface-300">{m.label[l]}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-container px-6 py-20 space-y-24">
 
         {/* Prose */}
         <Reveal>
-          <div className="grid md:grid-cols-[1fr_2px_1fr] gap-10 md:gap-16">
-            <div className="space-y-6">
-              <p className="text-lg leading-relaxed text-surface-100 font-medium">{t("p1")}</p>
-              <p className="leading-relaxed text-surface-200">{t("p2")}</p>
-            </div>
-            <div className="hidden md:block bg-surface-700/50 rounded-full" />
-            <div className="space-y-6">
-              <p className="leading-relaxed text-surface-200">{t("p3")}</p>
-              <div className="rounded-xl border border-vojvodina-red/30 bg-vojvodina-red/5 px-5 py-4">
-                <p className="leading-relaxed text-surface-100">{t("p4")}</p>
-              </div>
+          <div className="max-w-3xl mx-auto space-y-8">
+            <p className="text-xl md:text-2xl leading-relaxed text-surface-50 font-medium border-l-2 border-vojvodina-red pl-6">
+              {t("p1")}
+            </p>
+            <p className="text-base leading-relaxed text-surface-200 pl-6">{t("p2")}</p>
+            <p className="text-base leading-relaxed text-surface-200 pl-6">{t("p3")}</p>
+            <div className="ml-6 rounded-xl border border-vojvodina-red/30 bg-vojvodina-red/5 px-6 py-5">
+              <p className="text-base leading-relaxed text-surface-100">{t("p4")}</p>
             </div>
           </div>
         </Reveal>
 
         {/* Trophies */}
         <Reveal>
-          <h2 className="font-display text-4xl md:text-5xl uppercase text-surface-50 mb-8">
-            {t("trophiesTitle")}
-          </h2>
-          <div className="rounded-xl border border-surface-700 overflow-hidden">
-            <table className="min-w-full">
-              <thead>
-                <tr className="bg-surface-800 border-b border-surface-700">
-                  <th className="px-6 py-3 text-left font-heading text-xs uppercase tracking-[0.2em] text-vojvodina-red">
-                    {locale === "sr" ? "Takmičenje" : "Competition"}
-                  </th>
-                  <th className="px-6 py-3 text-center font-heading text-xs uppercase tracking-[0.2em] text-vojvodina-red w-24">
-                    {locale === "sr" ? "Titule" : "Titles"}
-                  </th>
-                  <th className="px-6 py-3 text-left font-heading text-xs uppercase tracking-[0.2em] text-vojvodina-red">
-                    {locale === "sr" ? "Godina" : "Year(s)"}
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {TROPHIES.map((group) => (
-                  <>
-                    {/* Category row */}
-                    <tr key={group.category.en} className="bg-surface-800/60 border-t border-surface-700">
-                      <td className="px-6 py-3 font-heading text-sm uppercase tracking-[0.15em] text-surface-50" colSpan={1}>
-                        {group.category[locale as "en" | "sr"]}
-                      </td>
-                      <td className="px-6 py-3 text-center">
-                        <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-vojvodina-red text-vojvodina-light font-heading text-sm font-bold">
-                          {group.total}
-                        </span>
-                      </td>
-                      <td className="px-6 py-3" />
-                    </tr>
-                    {/* Competition rows */}
+          <div className="space-y-6">
+            <div className="flex items-end gap-4">
+              <h2 className="font-display text-5xl md:text-6xl uppercase text-surface-50">{t("trophiesTitle")}</h2>
+              <span className="mb-1.5 font-heading text-sm uppercase tracking-[0.2em] text-surface-300">
+                {locale === "sr" ? "9 ukupno" : "9 total"}
+              </span>
+            </div>
+
+            <div className="rounded-xl border border-surface-700 overflow-hidden divide-y divide-surface-700">
+              {TROPHIES.map((group) => (
+                <div key={group.category.en}>
+                  {/* Category header */}
+                  <div className="grid grid-cols-[1fr_80px_1fr] items-center bg-vojvodina-dark px-6 py-4 gap-4">
+                    <span className="font-heading text-xs uppercase tracking-[0.25em] text-vojvodina-light/80">
+                      {group.category[l]}
+                    </span>
+                    <span className="flex items-center justify-center">
+                      <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-vojvodina-red text-vojvodina-light font-display text-lg">
+                        {group.total}
+                      </span>
+                    </span>
+                    <span />
+                  </div>
+
+                  {/* Competition rows */}
+                  <div className="divide-y divide-surface-700/50">
                     {group.rows.map((row) => (
-                      <tr key={row.competition.en} className="border-t border-surface-700/50 hover:bg-surface-800/30 transition-colors">
-                        <td className="px-6 py-4 pl-10 text-surface-100 text-sm">
-                          {row.competition[locale as "en" | "sr"]}
-                        </td>
-                        <td className="px-6 py-4 text-center text-surface-50 font-heading text-sm">
+                      <div
+                        key={row.competition.en}
+                        className="grid grid-cols-[1fr_80px_1fr] items-center px-6 py-4 gap-4 bg-surface-900/30 hover:bg-surface-800/50 transition-colors"
+                      >
+                        <span className="pl-4 text-sm text-surface-100 border-l border-vojvodina-red/30">
+                          {row.competition[l]}
+                        </span>
+                        <span className="text-center font-heading text-base text-vojvodina-red">
                           {row.count}×
-                        </td>
-                        <td className="px-6 py-4">
-                          <div className="flex flex-wrap gap-1.5">
-                            {row.years.map((y) => (
-                              <span
-                                key={y}
-                                className="inline-block rounded-full bg-vojvodina-red/10 border border-vojvodina-red/20 text-vojvodina-red px-2.5 py-0.5 text-xs font-heading tracking-wider"
-                              >
-                                {y}
-                              </span>
-                            ))}
-                          </div>
-                        </td>
-                      </tr>
+                        </span>
+                        <div className="flex flex-wrap gap-1.5">
+                          {row.years.map((y) => (
+                            <span
+                              key={y}
+                              className="inline-block rounded-md bg-vojvodina-red/15 text-vojvodina-red px-2.5 py-1 text-xs font-heading tracking-wider"
+                            >
+                              {y}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
                     ))}
-                  </>
-                ))}
-              </tbody>
-            </table>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </Reveal>
 
