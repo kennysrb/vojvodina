@@ -65,7 +65,7 @@ export default function Hero({
             fill
             priority
             className="object-contain"
-            style={{ filter: "drop-shadow(0 20px 60px rgba(0,173,241,0.35))" }}
+            style={{ filter: "drop-shadow(0 20px 60px rgba(237,50,55,0.35))" }}
           />
         </Reveal>
       </div>
