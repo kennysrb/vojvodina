@@ -23,12 +23,12 @@ const components: PortableTextComponents = {
     h2: ({ children }) => <h2 className="font-heading text-3xl md:text-4xl text-surface-50 mt-10 mb-4">{children}</h2>,
     h3: ({ children }) => <h3 className="font-heading text-2xl text-surface-50 mt-8 mb-3">{children}</h3>,
     blockquote: ({ children }) => (
-      <blockquote className="border-l-2 border-cones-orange pl-6 my-8 italic text-surface-100">{children}</blockquote>
+      <blockquote className="border-l-2 border-vojvodina-light pl-6 my-8 italic text-surface-100">{children}</blockquote>
     ),
   },
   marks: {
     link: ({ children, value }: { children: React.ReactNode; value?: { href?: string } }) => (
-      <a href={value?.href} className="text-cones-blue hover:text-cones-orange underline underline-offset-4">{children}</a>
+      <a href={value?.href} className="text-vojvodina-red hover:text-vojvodina-light underline underline-offset-4">{children}</a>
     ),
     strong: ({ children }) => <strong className="text-surface-50 font-semibold">{children}</strong>,
   },

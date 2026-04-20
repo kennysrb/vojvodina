@@ -32,7 +32,7 @@ export default function PracticeTable({
         <thead className="bg-surface-800">
           <tr>
             {(["day", "time", "venue", "level", "notes"] as const).map((k) => (
-              <th key={k} className="px-4 py-3 text-left font-heading text-xs uppercase tracking-[0.2em] text-cones-blue">
+              <th key={k} className="px-4 py-3 text-left font-heading text-xs uppercase tracking-[0.2em] text-vojvodina-red">
                 {t(`table.${k}`)}
               </th>
             ))}
@@ -42,11 +42,11 @@ export default function PracticeTable({
           {rows.map((r) => {
             const isToday = r.dayOfWeek === todayKey;
             return (
-              <tr key={r._id} className={isToday ? "bg-cones-blue/10" : ""}>
+              <tr key={r._id} className={isToday ? "bg-vojvodina-red/10" : ""}>
                 <td className="px-4 py-4 font-heading uppercase tracking-widest text-sm">
                   {t(`days.${r.dayOfWeek}`)}
                   {isToday && (
-                    <span className="ml-2 rounded-full bg-cones-blue text-cones-black px-2 py-0.5 text-[10px] uppercase tracking-widest">
+                    <span className="ml-2 rounded-full bg-vojvodina-red text-vojvodina-dark px-2 py-0.5 text-[10px] uppercase tracking-widest">
                       {t("today")}
                     </span>
                   )}

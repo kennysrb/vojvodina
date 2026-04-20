@@ -32,8 +32,8 @@ export default function NewsPageClient({ articles }: { articles: ArticleCardData
             className={cn(
               "rounded-full px-4 py-2 text-xs font-heading uppercase tracking-widest border transition-colors",
               category === c
-                ? "bg-cones-blue text-cones-black border-cones-blue"
-                : "border-surface-600 text-surface-100 hover:border-cones-blue hover:text-cones-blue"
+                ? "bg-vojvodina-red text-vojvodina-dark border-vojvodina-red"
+                : "border-surface-600 text-surface-100 hover:border-vojvodina-red hover:text-vojvodina-red"
             )}
           >
             {tFilters(c)}

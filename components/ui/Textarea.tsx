@@ -13,7 +13,7 @@ export default function Textarea({ label, name, hint, error, className, required
   return (
     <div className="flex flex-col gap-1.5">
       <label htmlFor={id} className="font-heading text-xs uppercase tracking-[0.2em] text-surface-200">
-        {label}{required && <span className="text-cones-orange"> *</span>}
+        {label}{required && <span className="text-vojvodina-light"> *</span>}
       </label>
       <textarea
         id={id}
@@ -21,7 +21,7 @@ export default function Textarea({ label, name, hint, error, className, required
         rows={rows}
         required={required}
         className={cn(
-          "rounded-md border border-surface-500 bg-surface-800 p-3 text-sm text-surface-50 placeholder:text-surface-300 focus-visible:outline-none focus-visible:border-cones-blue focus-visible:ring-2 focus-visible:ring-cones-blue/30",
+          "rounded-md border border-surface-500 bg-surface-800 p-3 text-sm text-surface-50 placeholder:text-surface-300 focus-visible:outline-none focus-visible:border-vojvodina-red focus-visible:ring-2 focus-visible:ring-vojvodina-red/30",
           error && "border-red-500",
           className
         )}

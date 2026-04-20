@@ -92,7 +92,7 @@ export default async function ArticlePage({
           ),
         }}
       />
-      <Link href="/news" className="inline-flex items-center gap-2 text-xs font-heading uppercase tracking-[0.25em] text-cones-blue hover:text-cones-orange">
+      <Link href="/news" className="inline-flex items-center gap-2 text-xs font-heading uppercase tracking-[0.25em] text-vojvodina-red hover:text-vojvodina-light">
         ← {t("back")}
       </Link>
       <header className="mt-8 space-y-4">

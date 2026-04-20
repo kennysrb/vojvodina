@@ -29,7 +29,7 @@ export default function NewsStrip({ articles }: { articles: HomeNewsCard[] }) {
       <div className="mx-auto max-w-container px-6">
         <div className="flex items-end justify-between gap-6 mb-10">
           <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
-          <Link href="/news" className="hidden md:inline font-heading text-xs uppercase tracking-[0.25em] text-cones-blue hover:text-cones-orange">
+          <Link href="/news" className="hidden md:inline font-heading text-xs uppercase tracking-[0.25em] text-vojvodina-red hover:text-vojvodina-light">
             {t("cta")} →
           </Link>
         </div>
@@ -50,7 +50,7 @@ export default function NewsStrip({ articles }: { articles: HomeNewsCard[] }) {
                       <Badge tone="orange">{a.category}</Badge>
                       <span className="text-xs text-surface-300">{formatDate(a.publishedAt, locale)}</span>
                     </div>
-                    <h3 className="font-heading text-2xl leading-tight text-surface-50 group-hover:text-cones-blue">{pickLocale(a.title, locale)}</h3>
+                    <h3 className="font-heading text-2xl leading-tight text-surface-50 group-hover:text-vojvodina-red">{pickLocale(a.title, locale)}</h3>
                     {a.excerpt && <p className="text-sm text-surface-200 line-clamp-2">{pickLocale(a.excerpt, locale)}</p>}
                   </div>
                 </Link>

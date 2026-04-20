@@ -35,7 +35,7 @@ export default function Gallery({ images }: { images: string[] }) {
           <button
             type="button"
             onClick={() => setLightboxIndex(0)}
-            className="hidden md:flex items-center gap-2 border border-surface-600 px-5 py-3 font-heading text-xs uppercase tracking-widest text-surface-100 hover:border-cones-blue hover:text-cones-blue transition-colors cursor-pointer rounded-md whitespace-nowrap"
+            className="hidden md:flex items-center gap-2 border border-surface-600 px-5 py-3 font-heading text-xs uppercase tracking-widest text-surface-100 hover:border-vojvodina-red hover:text-vojvodina-red transition-colors cursor-pointer rounded-md whitespace-nowrap"
           >
             {t("viewAll")} →
           </button>
@@ -69,7 +69,7 @@ export default function Gallery({ images }: { images: string[] }) {
           <button
             type="button"
             onClick={() => setLightboxIndex(0)}
-            className="flex items-center gap-2 border border-surface-600 px-5 py-3 font-heading text-xs uppercase tracking-widest text-surface-100 hover:border-cones-blue hover:text-cones-blue transition-colors cursor-pointer rounded-md"
+            className="flex items-center gap-2 border border-surface-600 px-5 py-3 font-heading text-xs uppercase tracking-widest text-surface-100 hover:border-vojvodina-red hover:text-vojvodina-red transition-colors cursor-pointer rounded-md"
           >
             {t("viewAll")} →
           </button>

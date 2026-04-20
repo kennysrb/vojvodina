@@ -28,7 +28,7 @@ export default function Hero({
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div aria-hidden className="absolute inset-0 bg-cones-black/95" />
+        <div aria-hidden className="absolute inset-0 bg-vojvodina-dark/95" />
         <div
           aria-hidden
           className="absolute inset-0 opacity-70"
@@ -41,8 +41,8 @@ export default function Hero({
         <Reveal className="space-y-8">
           <Badge tone="blue">{t("eyebrow")}</Badge>
           <h1 className="font-display leading-[0.88] tracking-tight" style={{ fontSize: "clamp(3.25rem,13vw,9rem)" }}>
-            <span className="block text-cones-blue">{t("titleLine1")}</span>
-            <span className="block text-cones-orange">{t("titleLine2")}</span>
+            <span className="block text-vojvodina-red">{t("titleLine1")}</span>
+            <span className="block text-vojvodina-light">{t("titleLine2")}</span>
           </h1>
           <p className="max-w-xl text-lg text-surface-100 leading-relaxed">{t("lead")}</p>
           <div className="flex flex-col sm:flex-row gap-4">

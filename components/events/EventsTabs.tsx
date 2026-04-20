@@ -32,7 +32,7 @@ export default function EventsTabs({
             onClick={() => setTab(k)}
             className={cn(
               "px-5 py-3 font-heading uppercase tracking-[0.2em] text-xs border-b-2 -mb-px transition-colors cursor-pointer",
-              tab === k ? "border-cones-blue text-cones-blue" : "border-transparent text-surface-200 hover:text-surface-50"
+              tab === k ? "border-vojvodina-red text-vojvodina-red" : "border-transparent text-surface-200 hover:text-surface-50"
             )}
           >
             {t(`tabs.${k}`)}
@@ -53,7 +53,7 @@ export default function EventsTabs({
         <div className="space-y-8">
           <PracticeTable rows={schedule} locale={locale} />
           <div className="rounded-xl border border-surface-700 bg-surface-800/50 p-6">
-            <p className="font-heading text-sm uppercase tracking-[0.25em] text-cones-orange mb-3">{t("fees.title")}</p>
+            <p className="font-heading text-sm uppercase tracking-[0.25em] text-vojvodina-light mb-3">{t("fees.title")}</p>
             <ul className="grid gap-2 text-surface-100 text-sm md:grid-cols-3">
               <li>{t("fees.members")}</li>
               <li>{t("fees.guests")}</li>

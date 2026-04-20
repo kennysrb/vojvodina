@@ -68,7 +68,7 @@ export default function RsvpForm() {
         </div>
         <div className="md:col-span-2 flex items-center gap-4">
           <Button type="submit" disabled={status === "sending"}>{t("submit")}</Button>
-          {status === "success" && <span className="text-sm text-cones-blue">{t("success")}</span>}
+          {status === "success" && <span className="text-sm text-vojvodina-red">{t("success")}</span>}
           {status === "error" && <span className="text-sm text-red-400">{t("error")}</span>}
         </div>
       </form>

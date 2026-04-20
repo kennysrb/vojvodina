@@ -29,7 +29,7 @@ export default function About({ teamPhotoUrl }: { teamPhotoUrl: string | null })
           <ul className="grid grid-cols-2 gap-6">
             {pillars.map((p) => (
               <li key={p.title} className="rounded-lg border border-surface-700 bg-surface-800/50 p-5">
-                <p className="font-heading text-sm uppercase tracking-[0.2em] text-cones-blue">{p.title}</p>
+                <p className="font-heading text-sm uppercase tracking-[0.2em] text-vojvodina-red">{p.title}</p>
                 <p className="mt-2 text-sm text-surface-100 leading-relaxed">{p.text}</p>
               </li>
             ))}

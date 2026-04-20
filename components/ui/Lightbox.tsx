@@ -36,7 +36,7 @@ export default function Lightbox({ images, index, onClose, onNav }: LightboxProp
       <button
         onClick={(e) => { e.stopPropagation(); prev(); }}
         aria-label="Previous"
-        className="absolute left-4 top-1/2 -translate-y-1/2 grid h-11 w-11 place-items-center rounded-full bg-surface-800/80 text-surface-50 hover:bg-cones-blue hover:text-cones-black transition-colors cursor-pointer z-10"
+        className="absolute left-4 top-1/2 -translate-y-1/2 grid h-11 w-11 place-items-center rounded-full bg-surface-800/80 text-surface-50 hover:bg-vojvodina-red hover:text-vojvodina-dark transition-colors cursor-pointer z-10"
       >
         ←
       </button>
@@ -53,7 +53,7 @@ export default function Lightbox({ images, index, onClose, onNav }: LightboxProp
       <button
         onClick={(e) => { e.stopPropagation(); next(); }}
         aria-label="Next"
-        className="absolute right-4 top-1/2 -translate-y-1/2 grid h-11 w-11 place-items-center rounded-full bg-surface-800/80 text-surface-50 hover:bg-cones-blue hover:text-cones-black transition-colors cursor-pointer z-10"
+        className="absolute right-4 top-1/2 -translate-y-1/2 grid h-11 w-11 place-items-center rounded-full bg-surface-800/80 text-surface-50 hover:bg-vojvodina-red hover:text-vojvodina-dark transition-colors cursor-pointer z-10"
       >
         →
       </button>

@@ -19,7 +19,7 @@ export default function PageHero({
         className="object-cover object-center"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-cones-black/80" />
+      <div className="absolute inset-0 bg-vojvodina-dark/80" />
       <div
         className="absolute inset-0 opacity-60"
         style={{
@@ -28,7 +28,7 @@ export default function PageHero({
         }}
       />
       <div className="relative mx-auto w-full max-w-container px-6 pb-10" style={{ zIndex: 1 }}>
-        <p className="font-heading text-xs uppercase tracking-widest text-cones-blue mb-2">
+        <p className="font-heading text-xs uppercase tracking-widest text-vojvodina-red mb-2">
           {eyebrow}
         </p>
         <h1 className="font-display text-5xl md:text-7xl uppercase text-surface-50 leading-none">

@@ -44,7 +44,7 @@ export default function ArticleCard({
             <Badge tone="orange">{article.category}</Badge>
             <span className="text-xs text-surface-300">{formatDate(article.publishedAt, locale)}</span>
           </div>
-          <h3 className="font-heading text-2xl leading-tight text-surface-50 group-hover:text-cones-blue transition-colors">
+          <h3 className="font-heading text-2xl leading-tight text-surface-50 group-hover:text-vojvodina-red transition-colors">
             {pickLocale(article.title, locale)}
           </h3>
           {article.excerpt && (

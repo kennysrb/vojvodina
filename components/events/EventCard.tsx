@@ -47,8 +47,8 @@ export default function EventCard({
           sizes="(max-width: 768px) 100vw, 256px"
           className="object-cover"
         />
-        <div className="absolute top-3 left-3 rounded-md bg-cones-black/80 backdrop-blur px-3 py-2 text-center">
-          <p className="font-display text-3xl leading-none text-cones-orange">
+        <div className="absolute top-3 left-3 rounded-md bg-vojvodina-dark/80 backdrop-blur px-3 py-2 text-center">
+          <p className="font-display text-3xl leading-none text-vojvodina-light">
             {String(d.getDate()).padStart(2, "0")}
           </p>
           <p className="font-heading text-[10px] uppercase tracking-widest text-surface-100">{monthLabel}</p>

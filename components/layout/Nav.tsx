@@ -20,12 +20,12 @@ export default function Nav() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-surface-700/60 bg-cones-black/80 backdrop-blur-md" style={{ height: "72px" }}>
+      <header className="sticky top-0 z-50 border-b border-surface-700/60 bg-vojvodina-dark/80 backdrop-blur-md" style={{ height: "72px" }}>
         <div className="mx-auto flex h-full max-w-container items-center justify-between px-6">
           <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
             <Image src="/logo.png" alt="Cones Belgrade" width={40} height={40} className="h-10 w-10 object-contain" />
             <span className="font-display text-2xl tracking-wide text-surface-50">
-              CONES <span className="text-cones-orange">BELGRADE</span>
+              CONES <span className="text-vojvodina-light">BELGRADE</span>
             </span>
           </Link>
 
@@ -38,7 +38,7 @@ export default function Nav() {
                   href={l.href}
                   className={cn(
                     "font-heading text-sm uppercase tracking-[0.25em] transition-colors",
-                    active ? "text-cones-blue" : "text-surface-100 hover:text-cones-blue"
+                    active ? "text-vojvodina-red" : "text-surface-100 hover:text-vojvodina-red"
                   )}
                 >
                   {l.label}
@@ -72,7 +72,7 @@ export default function Nav() {
       {/* Full-screen mobile menu */}
       <div
         className={cn(
-          "fixed inset-0 z-40 md:hidden flex flex-col bg-cones-black transition-all duration-300",
+          "fixed inset-0 z-40 md:hidden flex flex-col bg-vojvodina-dark transition-all duration-300",
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         )}
         style={{ top: "72px" }}
@@ -86,7 +86,7 @@ export default function Nav() {
                 href={l.href}
                 className={cn(
                   "font-display text-5xl uppercase tracking-widest transition-colors",
-                  active ? "text-cones-blue" : "text-surface-50 hover:text-cones-blue"
+                  active ? "text-vojvodina-red" : "text-surface-50 hover:text-vojvodina-red"
                 )}
                 onClick={() => setOpen(false)}
               >
