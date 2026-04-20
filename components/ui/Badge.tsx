@@ -4,7 +4,7 @@ type Tone = "blue" | "orange" | "neutral";
 
 const toneClasses: Record<Tone, string> = {
   blue: "bg-vojvodina-red/15 text-vojvodina-red",
-  orange: "bg-vojvodina-light/15 text-vojvodina-light",
+  orange: "bg-vojvodina-dark/10 text-vojvodina-dark",
   neutral: "bg-surface-600 text-surface-100",
 };
 

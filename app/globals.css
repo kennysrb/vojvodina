@@ -8,17 +8,17 @@
   --color-vojvodina-light-dim: #d9d5d6;
   --color-vojvodina-dark: #373435;
 
-  /* Surface palette (derived from #373435 as darkest anchor) */
-  --color-surface-900: #373435;
-  --color-surface-800: #413f40;
-  --color-surface-700: #4d4a4b;
-  --color-surface-600: #5a5758;
-  --color-surface-500: #696667;
-  --color-surface-400: #807d7e;
-  --color-surface-300: #9a9798;
-  --color-surface-200: #b6b3b4;
-  --color-surface-100: #d3d0d1;
-  --color-surface-50: #f0edee;
+  /* Surface palette — light theme (900=lightest bg, 50=darkest text) */
+  --color-surface-900: #f8f6f6;
+  --color-surface-800: #ede9ea;
+  --color-surface-700: #dedadb;
+  --color-surface-600: #cac6c7;
+  --color-surface-500: #b0acad;
+  --color-surface-400: #8a8687;
+  --color-surface-300: #6b6768;
+  --color-surface-200: #4d494a;
+  --color-surface-100: #312e2f;
+  --color-surface-50: #1a1718;
 
   /* Font families */
   --font-family-display: var(--font-display), Impact, sans-serif;
@@ -40,12 +40,12 @@
 }
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html, body {
-  background: #373435;
-  color: #f0edee;
+  background: #f8f6f6;
+  color: #1a1718;
   -webkit-font-smoothing: antialiased;
 }
 

@@ -32,7 +32,7 @@ export default function NewsPageClient({ articles }: { articles: ArticleCardData
             className={cn(
               "rounded-full px-4 py-2 text-xs font-heading uppercase tracking-widest border transition-colors",
               category === c
-                ? "bg-vojvodina-red text-vojvodina-dark border-vojvodina-red"
+                ? "bg-vojvodina-red text-vojvodina-light border-vojvodina-red"
                 : "border-surface-600 text-surface-100 hover:border-vojvodina-red hover:text-vojvodina-red"
             )}
           >

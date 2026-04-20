@@ -51,7 +51,7 @@ export default function EventCard({
           <p className="font-display text-3xl leading-none text-vojvodina-light">
             {String(d.getDate()).padStart(2, "0")}
           </p>
-          <p className="font-heading text-[10px] uppercase tracking-widest text-surface-100">{monthLabel}</p>
+          <p className="font-heading text-[10px] uppercase tracking-widest text-vojvodina-light/70">{monthLabel}</p>
         </div>
       </div>
       <div className="flex-1 p-6 space-y-3 flex flex-col justify-between">

@@ -31,11 +31,11 @@ export default function PageHero({
         <p className="font-heading text-xs uppercase tracking-widest text-vojvodina-red mb-2">
           {eyebrow}
         </p>
-        <h1 className="font-display text-5xl md:text-7xl uppercase text-surface-50 leading-none">
+        <h1 className="font-display text-5xl md:text-7xl uppercase text-vojvodina-light leading-none">
           {title}
         </h1>
         {description && (
-          <p className="mt-3 text-surface-200 max-w-xl">{description}</p>
+          <p className="mt-3 text-vojvodina-light/70 max-w-xl">{description}</p>
         )}
       </div>
     </div>

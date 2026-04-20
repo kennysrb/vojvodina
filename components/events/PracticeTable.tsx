@@ -46,7 +46,7 @@ export default function PracticeTable({
                 <td className="px-4 py-4 font-heading uppercase tracking-widest text-sm">
                   {t(`days.${r.dayOfWeek}`)}
                   {isToday && (
-                    <span className="ml-2 rounded-full bg-vojvodina-red text-vojvodina-dark px-2 py-0.5 text-[10px] uppercase tracking-widest">
+                    <span className="ml-2 rounded-full bg-vojvodina-red text-vojvodina-light px-2 py-0.5 text-[10px] uppercase tracking-widest">
                       {t("today")}
                     </span>
                   )}

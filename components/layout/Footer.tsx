@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="mx-auto max-w-container px-6 py-16 grid gap-10 md:grid-cols-4">
         <div>
           <p className="font-display text-3xl text-surface-50">
-            VOJVO<span className="text-vojvodina-light">DINA</span>
+            VOJVO<span className="text-vojvodina-red">DINA</span>
           </p>
           <p className="mt-3 text-surface-200 text-sm leading-relaxed">
             {tF("tagline")}
@@ -44,7 +44,7 @@ export default function Footer() {
             {tF("contact")}
           </p>
           <p className="text-sm text-surface-200">{tF("address")}</p>
-          <p className="mt-2 text-sm text-surface-200">hello@cones.rs</p>
+          <p className="mt-2 text-sm text-surface-200">vojvodinahc@gmail.com</p>
         </div>
         <div>
           <p className="font-heading text-xs uppercase tracking-[0.25em] text-vojvodina-red mb-3">
@@ -54,7 +54,7 @@ export default function Footer() {
             <li>
               <a
                 className="hover:text-vojvodina-red"
-                href="https://instagram.com/cones_belgrade011/"
+                href="https://instagram.com/hkvojvodina/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -64,7 +64,7 @@ export default function Footer() {
             <li>
               <a
                 className="hover:text-vojvodina-red"
-                href="hhttps://facebook.com/icehockeybelgrade"
+                href="https://facebook.com/vojvodinaicehockey"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -74,7 +74,7 @@ export default function Footer() {
             <li>
               <a
                 className="hover:text-vojvodina-red"
-                href="https://youtube.com/@conesbelgrade"
+                href="https://youtube.com/@hkvojvodina"
                 target="_blank"
                 rel="noreferrer"
               >

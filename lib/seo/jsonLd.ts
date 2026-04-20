@@ -24,8 +24,8 @@ export function sportsTeamJsonLd(locale: Locale) {
       },
     },
     sameAs: [
-      "https://instagram.com/cones_belgrade011/",
-      "https://facebook.com/icehockeybelgrade",
+      "https://instagram.com/hkvojvodina/",
+      "https://facebook.com/vojvodinaicehockey",
     ],
   };
 }

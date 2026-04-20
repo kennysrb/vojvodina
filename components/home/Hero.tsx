@@ -44,13 +44,13 @@ export default function Hero({
             <span className="block text-vojvodina-red">{t("titleLine1")}</span>
             <span className="block text-vojvodina-light">{t("titleLine2")}</span>
           </h1>
-          <p className="max-w-xl text-lg text-surface-100 leading-relaxed">{t("lead")}</p>
+          <p className="max-w-xl text-lg text-vojvodina-light/80 leading-relaxed">{t("lead")}</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/events" variant="primary" size="lg" className="justify-center">{t("ctaPrimary")}</Button>
             <Button href="/news" variant="outline" size="lg" className="justify-center">{t("ctaSecondary")}</Button>
           </div>
           {stats.length > 0 && (
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-surface-700/60 max-w-xl">
+            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-vojvodina-light/20 max-w-xl">
               {stats.map((s) => (
                 <StatBlock key={s.label} value={s.value} label={s.label} />
               ))}

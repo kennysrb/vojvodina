@@ -20,11 +20,11 @@ export default function Nav() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-surface-700/60 bg-vojvodina-dark/80 backdrop-blur-md" style={{ height: "72px" }}>
+      <header className="sticky top-0 z-50 border-b border-vojvodina-dark/30 bg-vojvodina-dark/80 backdrop-blur-md" style={{ height: "72px" }}>
         <div className="mx-auto flex h-full max-w-container items-center justify-between px-6">
           <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
             <Image src="/logo.png" alt="Vojvodina HC" width={40} height={40} className="h-10 w-10 object-contain" />
-            <span className="font-display text-2xl tracking-wide text-surface-50">
+            <span className="font-display text-2xl tracking-wide text-vojvodina-red">
               VOJVO<span className="text-vojvodina-light">DINA</span>
             </span>
           </Link>
@@ -38,7 +38,7 @@ export default function Nav() {
                   href={l.href}
                   className={cn(
                     "font-heading text-sm uppercase tracking-[0.25em] transition-colors",
-                    active ? "text-vojvodina-red" : "text-surface-100 hover:text-vojvodina-red"
+                    active ? "text-vojvodina-red" : "text-vojvodina-light hover:text-vojvodina-red"
                   )}
                 >
                   {l.label}
@@ -62,9 +62,9 @@ export default function Nav() {
             className="md:hidden flex flex-col justify-center items-center h-10 w-10 gap-[5px] cursor-pointer"
             onClick={() => setOpen((v) => !v)}
           >
-            <span className={cn("block h-0.5 w-6 bg-surface-100 transition-all duration-300 origin-center", open && "translate-y-[7px] rotate-45")} />
-            <span className={cn("block h-0.5 w-6 bg-surface-100 transition-all duration-300", open && "opacity-0")} />
-            <span className={cn("block h-0.5 w-6 bg-surface-100 transition-all duration-300 origin-center", open && "-translate-y-[7px] -rotate-45")} />
+            <span className={cn("block h-0.5 w-6 bg-vojvodina-light transition-all duration-300 origin-center", open && "translate-y-[7px] rotate-45")} />
+            <span className={cn("block h-0.5 w-6 bg-vojvodina-light transition-all duration-300", open && "opacity-0")} />
+            <span className={cn("block h-0.5 w-6 bg-vojvodina-light transition-all duration-300 origin-center", open && "-translate-y-[7px] -rotate-45")} />
           </button>
         </div>
       </header>

@@ -2,7 +2,7 @@ export default function StatBlock({ value, label }: { value: string; label: stri
   return (
     <div className="flex flex-col items-center">
       <span className="font-display text-5xl text-vojvodina-red">{value}</span>
-      <span className="mt-1 font-heading text-xs uppercase tracking-widest text-surface-200">
+      <span className="mt-1 font-heading text-xs uppercase tracking-widest text-vojvodina-light/60">
         {label}
       </span>
     </div>

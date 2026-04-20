@@ -1,34 +1,46 @@
 {
   "nav": { "home": "Home", "news": "News", "events": "Events", "join": "Join" },
   "footer": {
-    "tagline": "Hockey. Team. Belgrade.",
+    "tagline": "Hockey. Team. Vojvodina.",
     "quickLinks": "Quick links",
     "contact": "Contact",
     "follow": "Follow us",
     "rights": "All rights reserved.",
-    "address": "Pionir Ice Park, Čarli Čaplina 39, Belgrade"
+    "address": "Ćirila i Metodija br. 96, 21000, Novi Sad, Serbia"
   },
   "hero": {
-    "eyebrow": "Vojvodina's hockey club",
+    "eyebrow": "Vojvodina hockey club",
     "titleLine1": "VOJVODINA",
     "titleLine2": "HC",
-    "lead": "Ice hockey at the heart of Vojvodina. Passion, teamwork, and fair play since 2014.",
+    "lead": "Ice hockey at the heart of Vojvodina. Passion, teamwork, and fair play since 1957.",
     "ctaPrimary": "Join the team",
     "ctaSecondary": "Learn more",
-    "stats": { "yearsLabel": "Years of history", "membersLabel": "Members", "matchesLabel": "Matches played" }
+    "stats": {
+      "yearsLabel": "Years of history",
+      "membersLabel": "Members",
+      "matchesLabel": "Matches played"
+    }
   },
   "about": {
     "eyebrow": "About the club",
     "title": "Passion on the ice, community off it",
-    "description": "Founded in 2014, Vojvodina HC is a club that stands behind every player — whether a veteran or lacing up skates for the first time.",
+    "description": "Founded in 1957, Vojvodina HC is a club that stands behind every player — whether a veteran or lacing up skates for the first time.",
     "pillars": {
-      "passionTitle": "Passion", "passionText": "Every practice, every game — no compromises.",
-      "unityTitle": "Team", "unityText": "We play for each other, above all else.",
-      "fairTitle": "Fair play", "fairText": "We respect opponents, referees, and the game.",
-      "communityTitle": "Community", "communityText": "A club connecting generations of Vojvodina hockey."
+      "passionTitle": "Passion",
+      "passionText": "Every practice, every game — no compromises.",
+      "unityTitle": "Team",
+      "unityText": "We play for each other, above all else.",
+      "fairTitle": "Fair play",
+      "fairText": "We respect opponents, referees, and the game.",
+      "communityTitle": "Community",
+      "communityText": "A club connecting generations of Vojvodina hockey."
     }
   },
-  "gallery": { "eyebrow": "Action shots", "title": "Game Gallery", "viewAll": "View all" },
+  "gallery": {
+    "eyebrow": "Action shots",
+    "title": "Game Gallery",
+    "viewAll": "View all"
+  },
   "news": { "eyebrow": "Latest", "title": "Club news", "cta": "All news" },
   "sponsors": { "eyebrow": "Partners", "title": "They believe in us" },
   "cta": {
@@ -42,7 +54,14 @@
     "eyebrow": "News",
     "title": "Latest from Vojvodina HC",
     "description": "Matches, tournaments, new jerseys, and stories from the club.",
-    "filters": { "all": "All", "tournament": "Tournaments", "club": "Club", "roster": "Roster", "match": "Matches", "community": "Community" },
+    "filters": {
+      "all": "All",
+      "tournament": "Tournaments",
+      "club": "Club",
+      "roster": "Roster",
+      "match": "Matches",
+      "community": "Community"
+    },
     "empty": "No news yet. Check back soon."
   },
   "article": {
@@ -53,15 +72,30 @@
     "eyebrow": "Events",
     "title": "Club calendar",
     "description": "Tournaments, friendly matches, open practices, and meetups.",
-    "tabs": { "upcoming": "Upcoming", "schedule": "Practice schedule", "past": "Past" },
+    "tabs": {
+      "upcoming": "Upcoming",
+      "schedule": "Practice schedule",
+      "past": "Past"
+    },
     "empty": "No events to display.",
     "rsvp": "RSVP",
     "today": "Today",
     "days": {
-      "mon": "Monday", "tue": "Tuesday", "wed": "Wednesday", "thu": "Thursday",
-      "fri": "Friday", "sat": "Saturday", "sun": "Sunday"
+      "mon": "Monday",
+      "tue": "Tuesday",
+      "wed": "Wednesday",
+      "thu": "Thursday",
+      "fri": "Friday",
+      "sat": "Saturday",
+      "sun": "Sunday"
     },
-    "table": { "day": "Day", "time": "Time", "venue": "Venue", "level": "Level", "notes": "Notes" },
+    "table": {
+      "day": "Day",
+      "time": "Time",
+      "venue": "Venue",
+      "level": "Level",
+      "notes": "Notes"
+    },
     "fees": {
       "title": "Practice fees",
       "members": "Members — free",
@@ -69,8 +103,16 @@
       "monthly": "Monthly pass — 3000 RSD"
     }
   },
-  "notFound": { "title": "Page not found", "description": "The link may be outdated. Go back home.", "cta": "Back to home" },
-  "error": { "title": "Something broke", "description": "Please try again or come back later.", "cta": "Try again" },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The link may be outdated. Go back home.",
+    "cta": "Back to home"
+  },
+  "error": {
+    "title": "Something broke",
+    "description": "Please try again or come back later.",
+    "cta": "Try again"
+  },
   "rsvpForm": {
     "title": "Reserve your spot",
     "description": "Fill in the form and we'll reply with practice or event details.",
@@ -78,7 +120,12 @@
     "email": "Email",
     "phone": "Phone",
     "role": "I am",
-    "roles": { "player": "Player", "beginner": "Beginner", "fan": "Fan", "parent": "Parent" },
+    "roles": {
+      "player": "Player",
+      "beginner": "Beginner",
+      "fan": "Fan",
+      "parent": "Parent"
+    },
     "message": "Message",
     "submit": "Send request",
     "success": "Thanks! We'll be in touch soon.",

@@ -1,35 +1,56 @@
 {
-  "nav": { "home": "Početna", "news": "Vesti", "events": "Događaji", "join": "Pridruži se" },
+  "nav": {
+    "home": "Početna",
+    "news": "Vesti",
+    "events": "Događaji",
+    "join": "Pridruži se"
+  },
   "footer": {
-    "tagline": "Hokej. Tim. Beograd.",
+    "tagline": "Hokej. Tim. Vojvodina.",
     "quickLinks": "Brzi linkovi",
     "contact": "Kontakt",
     "follow": "Prati nas",
     "rights": "Sva prava zadržana.",
-    "address": "Ledeni park Pionir, Čarli Čaplina 39, Beograd"
+    "address": "Ćirila i Metodija br. 96, 21000, Novi Sad, Srbija"
   },
   "hero": {
     "eyebrow": "Hokejaški klub Vojvodine",
     "titleLine1": "VOJVODINA",
     "titleLine2": "HC",
-    "lead": "Hokej na ledu u srcu Vojvodine. Strast, timski duh i fer-plej od 2014. godine.",
+    "lead": "Hokej na ledu u srcu Vojvodine. Strast, timski duh i fer-plej od 1957. godine.",
     "ctaPrimary": "Pridruži se timu",
     "ctaSecondary": "Saznaj više",
-    "stats": { "yearsLabel": "Godina istorije", "membersLabel": "Članova", "matchesLabel": "Odigranih utakmica" }
+    "stats": {
+      "yearsLabel": "Godina istorije",
+      "membersLabel": "Članova",
+      "matchesLabel": "Odigranih utakmica"
+    }
   },
   "about": {
     "eyebrow": "O klubu",
     "title": "Strast na ledu, zajednica van njega",
-    "description": "Osnovan 2014. godine, Vojvodina HC je klub koji stoji iza svakog igrača, bilo da je veteran ili prvi put obuo klizaljke.",
+    "description": "Osnovan 1957. godine, Vojvodina HC je klub koji stoji iza svakog igrača, bilo da je veteran ili prvi put obuo klizaljke.",
     "pillars": {
-      "passionTitle": "Strast", "passionText": "Svaki trening, svaka utakmica — bez kompromisa.",
-      "unityTitle": "Tim", "unityText": "Igramo jedni za druge, pre svega ostalog.",
-      "fairTitle": "Fer-plej", "fairText": "Poštujemo protivnika, sudije i igru.",
-      "communityTitle": "Zajednica", "communityText": "Klub koji povezuje generacije hokejaša Vojvodine."
+      "passionTitle": "Strast",
+      "passionText": "Svaki trening, svaka utakmica — bez kompromisa.",
+      "unityTitle": "Tim",
+      "unityText": "Igramo jedni za druge, pre svega ostalog.",
+      "fairTitle": "Fer-plej",
+      "fairText": "Poštujemo protivnika, sudije i igru.",
+      "communityTitle": "Zajednica",
+      "communityText": "Klub koji povezuje generacije hokejaša Vojvodine."
     }
   },
-  "gallery": { "eyebrow": "Akcioni snimci", "title": "Galerija utakmica", "viewAll": "Pogledaj sve" },
-  "news": { "eyebrow": "Najnovije", "title": "Vesti iz kluba", "cta": "Sve vesti" },
+  "gallery": {
+    "eyebrow": "Akcioni snimci",
+    "title": "Galerija utakmica",
+    "viewAll": "Pogledaj sve"
+  },
+  "news": {
+    "eyebrow": "Najnovije",
+    "title": "Vesti iz kluba",
+    "cta": "Sve vesti"
+  },
   "sponsors": { "eyebrow": "Partneri", "title": "Oni veruju u nas" },
   "cta": {
     "title": "Spreman za led?",
@@ -42,7 +63,14 @@
     "eyebrow": "Vesti",
     "title": "Najnovije iz Vojvodina HC",
     "description": "Utakmice, turniri, novi dresovi i priče iz kluba.",
-    "filters": { "all": "Sve", "tournament": "Turniri", "club": "Klub", "roster": "Ekipa", "match": "Utakmice", "community": "Zajednica" },
+    "filters": {
+      "all": "Sve",
+      "tournament": "Turniri",
+      "club": "Klub",
+      "roster": "Ekipa",
+      "match": "Utakmice",
+      "community": "Zajednica"
+    },
     "empty": "Trenutno nema vesti. Vratite se uskoro."
   },
   "article": {
@@ -53,15 +81,30 @@
     "eyebrow": "Događaji",
     "title": "Kalendar kluba",
     "description": "Turniri, prijateljske utakmice, otvoreni treninzi i okupljanja.",
-    "tabs": { "upcoming": "Predstojeći", "schedule": "Raspored treninga", "past": "Prošli" },
+    "tabs": {
+      "upcoming": "Predstojeći",
+      "schedule": "Raspored treninga",
+      "past": "Prošli"
+    },
     "empty": "Nema događaja za prikaz.",
     "rsvp": "Prijavi se",
     "today": "Danas",
     "days": {
-      "mon": "Ponedeljak", "tue": "Utorak", "wed": "Sreda", "thu": "Četvrtak",
-      "fri": "Petak", "sat": "Subota", "sun": "Nedelja"
+      "mon": "Ponedeljak",
+      "tue": "Utorak",
+      "wed": "Sreda",
+      "thu": "Četvrtak",
+      "fri": "Petak",
+      "sat": "Subota",
+      "sun": "Nedelja"
     },
-    "table": { "day": "Dan", "time": "Termin", "venue": "Lokacija", "level": "Nivo", "notes": "Napomene" },
+    "table": {
+      "day": "Dan",
+      "time": "Termin",
+      "venue": "Lokacija",
+      "level": "Nivo",
+      "notes": "Napomene"
+    },
     "fees": {
       "title": "Naknade za treninge",
       "members": "Članovi — besplatno",
@@ -69,8 +112,16 @@
       "monthly": "Mesečna karta — 3000 RSD"
     }
   },
-  "notFound": { "title": "Stranica nije pronađena", "description": "Link je možda zastareo. Vrati se na početnu.", "cta": "Nazad na početnu" },
-  "error": { "title": "Nešto nije u redu", "description": "Pokušaj ponovo ili se vrati kasnije.", "cta": "Pokušaj ponovo" },
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "description": "Link je možda zastareo. Vrati se na početnu.",
+    "cta": "Nazad na početnu"
+  },
+  "error": {
+    "title": "Nešto nije u redu",
+    "description": "Pokušaj ponovo ili se vrati kasnije.",
+    "cta": "Pokušaj ponovo"
+  },
   "rsvpForm": {
     "title": "Rezerviši mesto",
     "description": "Popuni formu i javićemo ti se sa detaljima treninga ili događaja.",
@@ -78,7 +129,12 @@
     "email": "Email",
     "phone": "Telefon",
     "role": "Ja sam",
-    "roles": { "player": "Igrač", "beginner": "Početnik", "fan": "Navijač", "parent": "Roditelj" },
+    "roles": {
+      "player": "Igrač",
+      "beginner": "Početnik",
+      "fan": "Navijač",
+      "parent": "Roditelj"
+    },
     "message": "Poruka",
     "submit": "Pošalji prijavu",
     "success": "Hvala! Javićemo se uskoro.",

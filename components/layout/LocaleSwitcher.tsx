@@ -29,7 +29,7 @@ export default function LocaleSwitcher({ className }: { className?: string }) {
             aria-current={active ? "true" : undefined}
             className={cn(
               "px-2 py-1 uppercase tracking-widest transition-colors cursor-pointer",
-              active ? "text-vojvodina-red" : "text-surface-200 hover:text-surface-50"
+              active ? "text-vojvodina-red" : "text-vojvodina-light hover:text-vojvodina-light/70"
             )}
           >
             {locale}
