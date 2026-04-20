@@ -4,8 +4,8 @@ import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "./sanity/schemas";
 
 export default defineConfig({
-  name: "cones-belgrade",
-  title: "Cones Belgrade",
+  name: "vojvodina-hc",
+  title: "Vojvodina HC",
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
   basePath: "/studio",
