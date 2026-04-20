@@ -105,11 +105,11 @@
       "level": "Nivo",
       "notes": "Napomene"
     },
-    "fees": {
-      "title": "Naknade za treninge",
-      "members": "Članovi — besplatno",
-      "guests": "Gosti — 800 RSD po terminu",
-      "monthly": "Mesečna karta — 3000 RSD"
+    "newMembers": {
+      "firstMonthTitle": "Prvi mesec besplatno",
+      "firstMonthDesc": "Novi članovi klizaju besplatno tokom celog prvog meseca — bez obaveza.",
+      "equipmentTitle": "Oprema obezbeđena",
+      "equipmentDesc": "Sva oprema je dostupna novim članovima kako biste mogli da isprobate led bez ikakvih početnih troškova."
     },
     "ageGroups": {
       "hockey-school": "Škola hokeja i klizanja",

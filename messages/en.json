@@ -96,11 +96,11 @@
       "level": "Level",
       "notes": "Notes"
     },
-    "fees": {
-      "title": "Practice fees",
-      "members": "Members — free",
-      "guests": "Guests — 800 RSD per session",
-      "monthly": "Monthly pass — 3000 RSD"
+    "newMembers": {
+      "firstMonthTitle": "First month free",
+      "firstMonthDesc": "New members skate for free during their entire first month — no commitment required.",
+      "equipmentTitle": "Equipment provided",
+      "equipmentDesc": "Full gear is available for all new members so you can try the ice without any upfront costs."
     },
     "ageGroups": {
       "hockey-school": "Hockey & Skating School",

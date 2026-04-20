@@ -55,13 +55,29 @@ export default function EventsTabs({
       {tab === "schedule" && (
         <div className="space-y-8">
           <PracticeAccordion rows={schedule} locale={locale} />
-          <div className="rounded-xl border border-surface-700 bg-surface-800/50 p-6">
-            <p className="font-heading text-sm uppercase tracking-[0.25em] text-vojvodina-dark mb-3">{t("fees.title")}</p>
-            <ul className="grid gap-2 text-surface-50 text-sm md:grid-cols-3">
-              <li>{t("fees.members")}</li>
-              <li>{t("fees.guests")}</li>
-              <li>{t("fees.monthly")}</li>
-            </ul>
+          <div className="rounded-xl border border-vojvodina-red/30 bg-vojvodina-red/5 p-6 flex flex-col sm:flex-row gap-6">
+            <div className="flex items-start gap-3 flex-1">
+              <span className="mt-0.5 text-vojvodina-red shrink-0">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <path d="M9 1.5L11.39 6.26L16.5 7.01L12.75 10.64L13.68 15.74L9 13.27L4.32 15.74L5.25 10.64L1.5 7.01L6.61 6.26L9 1.5Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/>
+                </svg>
+              </span>
+              <div>
+                <p className="font-heading text-sm uppercase tracking-[0.2em] text-vojvodina-red mb-1">{t("newMembers.firstMonthTitle")}</p>
+                <p className="text-sm text-surface-50">{t("newMembers.firstMonthDesc")}</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 flex-1">
+              <span className="mt-0.5 text-vojvodina-red shrink-0">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+              <div>
+                <p className="font-heading text-sm uppercase tracking-[0.2em] text-vojvodina-red mb-1">{t("newMembers.equipmentTitle")}</p>
+                <p className="text-sm text-surface-50">{t("newMembers.equipmentDesc")}</p>
+              </div>
+            </div>
           </div>
         </div>
       )}
