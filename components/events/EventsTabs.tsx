@@ -27,15 +27,17 @@ export default function EventsTabs({
 
   return (
     <>
-      <div className="flex flex-wrap gap-2 mb-10 border-b border-surface-700/60">
+      <div className="mb-10 inline-flex w-full rounded-xl bg-surface-800/60 border border-surface-700 p-1 gap-1">
         {tabs.map((k) => (
           <button
             key={k}
             type="button"
             onClick={() => setTab(k)}
             className={cn(
-              "px-5 py-3 font-heading uppercase tracking-[0.2em] text-xs border-b-2 -mb-px transition-colors cursor-pointer",
-              tab === k ? "border-vojvodina-red text-vojvodina-red" : "border-transparent text-surface-200 hover:text-surface-50"
+              "flex-1 rounded-lg py-2.5 px-2 font-heading uppercase tracking-[0.15em] text-xs transition-all duration-200 cursor-pointer",
+              tab === k
+                ? "bg-vojvodina-red text-vojvodina-light shadow-sm"
+                : "text-surface-300 hover:text-surface-50"
             )}
           >
             {t(`tabs.${k}`)}

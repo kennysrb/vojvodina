@@ -11,9 +11,8 @@ export async function generateMetadata({
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const base = rootMetadata(locale, "/hockey");
   const t = await getTranslations({ locale, namespace: "hockey" });
-  return { ...base, title: t("title"), description: t("heroDescription") };
+  return rootMetadata(locale, "/hockey", { title: t("title"), description: t("heroDescription") });
 }
 
 export default async function HockeyPage({

@@ -11,9 +11,8 @@ export async function generateMetadata({
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const base = rootMetadata(locale, "/hockey-school");
   const t = await getTranslations({ locale, namespace: "school" });
-  return { ...base, title: t("title"), description: t("heroDescription") };
+  return rootMetadata(locale, "/hockey-school", { title: t("title"), description: t("heroDescription") });
 }
 
 const BENEFIT_ICONS: Record<string, React.ReactNode> = {

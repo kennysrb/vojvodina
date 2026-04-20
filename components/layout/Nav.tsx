@@ -34,7 +34,7 @@ export default function Nav() {
 
           <nav aria-label="Primary" className="hidden md:flex items-center gap-8">
             {links.map((l) => {
-              const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
+              const active = l.href === "/" ? pathname === "/" : pathname === l.href || pathname.startsWith(l.href + "/");
               return (
                 <Link
                   key={l.href}
@@ -82,14 +82,14 @@ export default function Nav() {
       >
         <nav className="flex flex-col flex-1 justify-center items-center gap-10 px-6">
           {links.map((l) => {
-            const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
+            const active = l.href === "/" ? pathname === "/" : pathname === l.href || pathname.startsWith(l.href + "/");
             return (
               <Link
                 key={l.href}
                 href={l.href}
                 className={cn(
-                  "font-display text-5xl uppercase tracking-widest transition-colors",
-                  active ? "text-vojvodina-red" : "text-surface-50 hover:text-vojvodina-red"
+                  "font-display text-3xl uppercase tracking-widest transition-colors",
+                  active ? "text-vojvodina-red" : "text-vojvodina-light hover:text-vojvodina-red"
                 )}
                 onClick={() => setOpen(false)}
               >

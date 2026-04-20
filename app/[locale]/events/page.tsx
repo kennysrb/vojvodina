@@ -18,9 +18,8 @@ export async function generateMetadata({
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const base = rootMetadata(locale, "/events");
   const t = await getTranslations({ locale, namespace: "events" });
-  return { ...base, title: t("title"), description: t("description") };
+  return rootMetadata(locale, "/events", { title: t("title"), description: t("description") });
 }
 
 type EventDoc = {

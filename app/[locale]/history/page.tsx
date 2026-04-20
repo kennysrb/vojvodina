@@ -11,9 +11,8 @@ export async function generateMetadata({
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const base = rootMetadata(locale, "/history");
   const t = await getTranslations({ locale, namespace: "history" });
-  return { ...base, title: t("title"), description: t("heroDescription") };
+  return rootMetadata(locale, "/history", { title: t("title"), description: t("heroDescription") });
 }
 
 const TROPHIES = [

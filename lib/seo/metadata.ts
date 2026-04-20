@@ -27,22 +27,30 @@ function alternatesForPath(path = "/"): Metadata["alternates"] {
   };
 }
 
-export function rootMetadata(locale: Locale, path = "/"): Metadata {
+export function rootMetadata(
+  locale: Locale,
+  path = "/",
+  overrides?: { title?: string; description?: string }
+): Metadata {
   const d = DEFAULTS[locale];
+  const title = overrides?.title ?? d.title;
+  const description = overrides?.description ?? d.description;
   return {
     metadataBase: new URL(SITE_URL),
-    title: { default: d.title, template: "%s · Vojvodina HC" },
-    description: d.description,
+    title: overrides?.title
+      ? { default: title, template: "%s · Vojvodina HC" }
+      : { default: d.title, template: "%s · Vojvodina HC" },
+    description,
     alternates: alternatesForPath(path),
     openGraph: {
       type: "website",
       locale: locale === "sr" ? "sr_RS" : "en_US",
       siteName: "Vojvodina HC",
-      title: d.title,
-      description: d.description,
+      title,
+      description,
       url: `${SITE_URL}${locale === "sr" ? "" : `/${locale}`}${path}`,
     },
-    twitter: { card: "summary_large_image", title: d.title, description: d.description },
+    twitter: { card: "summary_large_image", title, description },
     icons: { icon: "/favicon.ico", apple: "/apple-touch-icon.png" },
   };
 }
