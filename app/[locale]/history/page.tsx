@@ -21,16 +21,38 @@ const TROPHIES = [
     category: { en: "National Championships", sr: "Nacionalna takmičenja" },
     total: 8,
     rows: [
-      { competition: { en: "Championship of SR Yugoslavia", sr: "Prvenstvo SR Jugoslavije" }, count: 6, years: [1998, 1999, 2000, 2001, 2002, 2003] },
-      { competition: { en: "Championship of Serbia & Montenegro", sr: "Prvenstvo Srbije i Crne Gore" }, count: 1, years: [2004] },
-      { competition: { en: "Championship of Serbia", sr: "Prvenstvo Srbije" }, count: 1, years: [2022] },
+      {
+        competition: {
+          en: "Championship of SR Yugoslavia",
+          sr: "Prvenstvo SR Jugoslavije",
+        },
+        count: 6,
+        years: [1998, 1999, 2000, 2001, 2002, 2003],
+      },
+      {
+        competition: {
+          en: "Championship of Serbia & Montenegro",
+          sr: "Prvenstvo Srbije i Crne Gore",
+        },
+        count: 1,
+        years: [2004],
+      },
+      {
+        competition: { en: "Championship of Serbia", sr: "Prvenstvo Srbije" },
+        count: 1,
+        years: [2022],
+      },
     ],
   },
   {
     category: { en: "Regional Competitions", sr: "Regionalna takmičenja" },
     total: 1,
     rows: [
-      { competition: { en: "Pannonian League", sr: "Panonska liga" }, count: 1, years: [2009] },
+      {
+        competition: { en: "Pannonian League", sr: "Panonska liga" },
+        count: 1,
+        years: [2009],
+      },
     ],
   },
 ];
@@ -53,16 +75,30 @@ export default async function HistoryPage({
 
   return (
     <>
-      <PageHero eyebrow={t("eyebrow")} title={t("title")} description={t("heroDescription")} image="/images/hero-bg-history.png" size="lg" objectPosition="center 90%" />
+      <PageHero
+        eyebrow={t("eyebrow")}
+        title={t("title")}
+        description={t("heroDescription")}
+        image="/images/hero-bg-history.png"
+        size="lg"
+        objectPosition="center 32%"
+      />
 
       {/* Milestone strip */}
       <div className="border-b border-surface-700/60 bg-surface-800/40">
         <div className="mx-auto max-w-container px-6">
           <div className="grid grid-cols-3 divide-x divide-surface-700/60">
             {MILESTONES.map((m) => (
-              <div key={m.value} className="py-8 px-6 flex flex-col items-center gap-1">
-                <span className="font-display text-4xl md:text-5xl text-vojvodina-red">{m.value}</span>
-                <span className="font-heading text-xs uppercase tracking-[0.2em] text-surface-300">{m.label[l]}</span>
+              <div
+                key={m.value}
+                className="py-8 px-6 flex flex-col items-center gap-1"
+              >
+                <span className="font-display text-4xl md:text-5xl text-vojvodina-red">
+                  {m.value}
+                </span>
+                <span className="font-heading text-xs uppercase tracking-[0.2em] text-surface-300">
+                  {m.label[l]}
+                </span>
               </div>
             ))}
           </div>
@@ -70,17 +106,22 @@ export default async function HistoryPage({
       </div>
 
       <div className="mx-auto max-w-container px-6 py-20 space-y-24">
-
         {/* Prose */}
         <Reveal>
           <div className="max-w-3xl mx-auto space-y-8">
             <p className="text-xl md:text-2xl leading-relaxed text-surface-50 font-medium border-l-2 border-vojvodina-red pl-6">
               {t("p1")}
             </p>
-            <p className="text-base leading-relaxed text-surface-200 pl-6">{t("p2")}</p>
-            <p className="text-base leading-relaxed text-surface-200 pl-6">{t("p3")}</p>
+            <p className="text-base leading-relaxed text-surface-200 pl-6">
+              {t("p2")}
+            </p>
+            <p className="text-base leading-relaxed text-surface-200 pl-6">
+              {t("p3")}
+            </p>
             <div className="ml-6 rounded-xl border border-vojvodina-red/30 bg-vojvodina-red/5 px-6 py-5">
-              <p className="text-base leading-relaxed text-surface-100">{t("p4")}</p>
+              <p className="text-base leading-relaxed text-surface-100">
+                {t("p4")}
+              </p>
             </div>
           </div>
         </Reveal>
@@ -89,7 +130,9 @@ export default async function HistoryPage({
         <Reveal>
           <div className="space-y-6">
             <div className="flex items-end gap-4">
-              <h2 className="font-display text-5xl md:text-6xl uppercase text-surface-50">{t("trophiesTitle")}</h2>
+              <h2 className="font-display text-5xl md:text-6xl uppercase text-surface-50">
+                {t("trophiesTitle")}
+              </h2>
               <span className="mb-1.5 font-heading text-sm uppercase tracking-[0.2em] text-surface-300">
                 {locale === "sr" ? "9 ukupno" : "9 total"}
               </span>
@@ -142,7 +185,6 @@ export default async function HistoryPage({
             </div>
           </div>
         </Reveal>
-
       </div>
     </>
   );
