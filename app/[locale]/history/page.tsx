@@ -53,7 +53,7 @@ export default async function HistoryPage({
 
   return (
     <>
-      <PageHero eyebrow={t("eyebrow")} title={t("title")} description={t("heroDescription")} image="/images/hero-bg-history.png" size="lg" objectPosition="center 70%" />
+      <PageHero eyebrow={t("eyebrow")} title={t("title")} description={t("heroDescription")} image="/images/hero-bg-history.png" size="lg" objectPosition="center 90%" />
 
       {/* Milestone strip */}
       <div className="border-b border-surface-700/60 bg-surface-800/40">
