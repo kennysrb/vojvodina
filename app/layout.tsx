@@ -1,4 +1,4 @@
-export const metadata = { title: "Cones Belgrade" };
+export const metadata = { title: "Vojvodina HC" };
 
 export default function RootLayout({
   children,
