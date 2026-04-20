@@ -76,14 +76,14 @@ export default async function HomePage({
   }));
 
   const mascotUrl = settings?.mascotImage
-    ? urlFor(settings.mascotImage).width(700).height(700).fit("max").url()
+    ? urlFor(settings.mascotImage).width(700).height(700).fit("max").auto("format").url()
     : null;
   const teamPhotoUrl = settings?.teamPhoto
-    ? urlFor(settings.teamPhoto).width(900).height(1125).fit("crop").url()
+    ? urlFor(settings.teamPhoto).width(900).height(1125).fit("crop").auto("format").url()
     : null;
   const galleryUrls: string[] = (settings?.galleryImages ?? [])
     .filter((img): img is NonNullable<typeof img> => Boolean(img?.asset))
-    .map((img) => urlFor(img!).width(1200).height(800).fit("crop").url());
+    .map((img) => urlFor(img!).width(1200).height(800).fit("crop").auto("format").url());
 
   const newsCards: HomeNewsCard[] = news.map((n) => ({
     _id: n._id,
@@ -93,7 +93,7 @@ export default async function HomePage({
     category: n.category,
     publishedAt: n.publishedAt,
     coverImageUrl: n.coverImage?.asset
-      ? urlFor(n.coverImage).width(800).height(500).fit("crop").url()
+      ? urlFor(n.coverImage).width(800).height(500).fit("crop").auto("format").url()
       : null,
   }));
 
@@ -102,7 +102,7 @@ export default async function HomePage({
     name: s.name,
     url: s.url,
     logoUrl: s.logo?.asset
-      ? urlFor(s.logo).width(240).height(120).fit("max").url()
+      ? urlFor(s.logo).width(240).height(120).fit("max").auto("format").url()
       : null,
   }));
 

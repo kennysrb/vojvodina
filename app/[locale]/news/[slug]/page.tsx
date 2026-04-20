@@ -41,7 +41,7 @@ export async function generateMetadata({
   const title = pickLocale(doc.title, locale);
   const description = pickLocale(doc.excerpt, locale) ?? undefined;
   const image = doc.coverImage?.asset
-    ? urlFor(doc.coverImage).width(1200).height(630).fit("crop").url()
+    ? urlFor(doc.coverImage).width(1200).height(630).fit("crop").auto("format").url()
     : undefined;
   return articleMetadata({ locale, slug, title, description, image, publishedAt: doc.publishedAt });
 }
@@ -72,7 +72,7 @@ export default async function ArticlePage({
   const excerpt = pickLocale(doc.excerpt, locale);
   const body = doc.body?.[locale] ?? doc.body?.sr ?? [];
   const coverUrl = doc.coverImage?.asset
-    ? urlFor(doc.coverImage).width(1800).fit("max").url()
+    ? urlFor(doc.coverImage).width(1800).fit("max").auto("format").url()
     : null;
 
   return (

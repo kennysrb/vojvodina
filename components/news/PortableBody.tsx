@@ -9,7 +9,7 @@ const components: PortableTextComponents = {
     image: ({ value }: { value: Record<string, unknown> }) => (
       <figure className="my-8 overflow-hidden rounded-lg border border-surface-700">
         <Image
-          src={urlFor(value).width(1400).fit("max").url()}
+          src={urlFor(value).width(1400).fit("max").auto("format").url()}
           alt={(value.alt as string) ?? ""}
           width={1400}
           height={900}

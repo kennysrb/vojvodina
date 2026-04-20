@@ -45,7 +45,7 @@ export default async function NewsPage({
     excerpt: d.excerpt,
     category: d.category,
     publishedAt: d.publishedAt,
-    coverImageUrl: d.coverImage?.asset ? urlFor(d.coverImage).width(800).height(500).fit("crop").url() : null,
+    coverImageUrl: d.coverImage?.asset ? urlFor(d.coverImage).width(800).height(500).fit("crop").auto("format").url() : null,
   }));
   const t = await getTranslations({ locale, namespace: "newsPage" });
   return (

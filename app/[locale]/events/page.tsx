@@ -47,7 +47,7 @@ function toItem(d: EventDoc): EventItem {
     city: d.city,
     description: d.description,
     rsvpUrl: d.rsvpUrl,
-    imageUrl: d.image?.asset ? urlFor(d.image).width(900).height(600).fit("crop").url() : null,
+    imageUrl: d.image?.asset ? urlFor(d.image).width(900).height(600).fit("crop").auto("format").url() : null,
   };
 }
 
