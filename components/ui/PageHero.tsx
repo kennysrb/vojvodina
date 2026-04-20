@@ -14,7 +14,7 @@ export default function PageHero({
   size?: "md" | "lg";
 }) {
   return (
-    <div className={size === "lg" ? "relative h-80 md:h-[28rem] flex items-end" : "relative h-64 md:h-80 flex items-end"}>
+    <div className={size === "lg" ? "relative h-96 md:h-[36rem] flex items-end" : "relative h-64 md:h-80 flex items-end"}>
       <Image
         src={image}
         alt=""
