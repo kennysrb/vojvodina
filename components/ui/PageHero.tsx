@@ -4,15 +4,19 @@ export default function PageHero({
   eyebrow,
   title,
   description,
+  image = "/images/hero-bg.jpg",
+  size = "md",
 }: {
   eyebrow: string;
   title: string;
   description?: string;
+  image?: string;
+  size?: "md" | "lg";
 }) {
   return (
-    <div className="relative h-64 md:h-80 flex items-end">
+    <div className={size === "lg" ? "relative h-80 md:h-[28rem] flex items-end" : "relative h-64 md:h-80 flex items-end"}>
       <Image
-        src="/images/hero-bg.jpg"
+        src={image}
         alt=""
         fill
         priority
