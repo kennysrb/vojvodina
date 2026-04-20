@@ -101,6 +101,15 @@
       "members": "Members — free",
       "guests": "Guests — 800 RSD per session",
       "monthly": "Monthly pass — 3000 RSD"
+    },
+    "ageGroups": {
+      "hockey-school": "Hockey & Skating School",
+      "u8": "U8",
+      "u10": "U10",
+      "u12": "U12",
+      "u14": "U14",
+      "juniors": "Juniors",
+      "seniors": "Seniors"
     }
   },
   "notFound": {

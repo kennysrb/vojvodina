@@ -4,7 +4,8 @@ import { useLocale, useTranslations } from "next-intl";
 import { cn } from "@/lib/utils/cn";
 import type { Locale } from "@/i18n/routing";
 import EventCard, { type EventItem } from "./EventCard";
-import PracticeTable, { type PracticeRow } from "./PracticeTable";
+import PracticeAccordion from "./PracticeAccordion";
+import type { PracticeRow } from "./PracticeTable";
 
 type Tab = "upcoming" | "schedule" | "past";
 
@@ -51,7 +52,7 @@ export default function EventsTabs({
 
       {tab === "schedule" && (
         <div className="space-y-8">
-          <PracticeTable rows={schedule} locale={locale} />
+          <PracticeAccordion rows={schedule} locale={locale} />
           <div className="rounded-xl border border-surface-700 bg-surface-800/50 p-6">
             <p className="font-heading text-sm uppercase tracking-[0.25em] text-vojvodina-dark mb-3">{t("fees.title")}</p>
             <ul className="grid gap-2 text-surface-50 text-sm md:grid-cols-3">

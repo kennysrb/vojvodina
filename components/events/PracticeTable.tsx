@@ -4,6 +4,7 @@ import type { Locale } from "@/i18n/routing";
 
 export type PracticeRow = {
   _id: string;
+  ageGroup?: string | null;
   dayOfWeek: "mon" | "tue" | "wed" | "thu" | "fri" | "sat" | "sun";
   startTime: string;
   endTime: string;

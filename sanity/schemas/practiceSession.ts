@@ -6,6 +6,23 @@ export default defineType({
   type: "document",
   fields: [
     defineField({
+      name: "ageGroup",
+      title: "Age Group",
+      type: "string",
+      options: {
+        list: [
+          { title: "Hockey & Skating School", value: "hockey-school" },
+          { title: "U8", value: "u8" },
+          { title: "U10", value: "u10" },
+          { title: "U12", value: "u12" },
+          { title: "U14", value: "u14" },
+          { title: "Juniors", value: "juniors" },
+          { title: "Seniors", value: "seniors" },
+        ],
+      },
+      validation: (r) => r.required(),
+    }),
+    defineField({
       name: "dayOfWeek",
       title: "Day",
       type: "string",

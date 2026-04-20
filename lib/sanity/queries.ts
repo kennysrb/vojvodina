@@ -44,7 +44,7 @@ export const pastEventsQuery = groq`
 
 export const practiceScheduleQuery = groq`
   *[_type == "practiceSession"] | order(order asc){
-    _id, dayOfWeek, startTime, endTime, venue, level, notes
+    _id, ageGroup, dayOfWeek, startTime, endTime, venue, level, notes
   }
 `;
 

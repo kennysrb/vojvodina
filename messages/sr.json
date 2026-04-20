@@ -110,6 +110,15 @@
       "members": "Članovi — besplatno",
       "guests": "Gosti — 800 RSD po terminu",
       "monthly": "Mesečna karta — 3000 RSD"
+    },
+    "ageGroups": {
+      "hockey-school": "Škola hokeja i klizanja",
+      "u8": "U8",
+      "u10": "U10",
+      "u12": "U12",
+      "u14": "U14",
+      "juniors": "Juniori",
+      "seniors": "Seniori"
     }
   },
   "notFound": {
