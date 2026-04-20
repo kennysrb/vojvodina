@@ -13,6 +13,37 @@ const JS_DAY_TO_KEY: Record<number, string> = {
   0: "sun", 1: "mon", 2: "tue", 3: "wed", 4: "thu", 5: "fri", 6: "sat",
 };
 
+function ChevronIcon({ open }: { open: boolean }) {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      aria-hidden="true"
+      className={cn("shrink-0 text-surface-400 transition-transform duration-300 ease-in-out", open && "rotate-180")}
+    >
+      <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function InfoIcon() {
+  return (
+    <svg
+      width="15"
+      height="15"
+      viewBox="0 0 15 15"
+      fill="none"
+      aria-hidden="true"
+      className="shrink-0 mt-0.5 text-vojvodina-red"
+    >
+      <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" strokeWidth="1.2" />
+      <path d="M7.5 6.5v4M7.5 4.5v.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export default function PracticeAccordion({ rows, locale }: { rows: PracticeRow[]; locale: Locale }) {
   const t = useTranslations("events");
   const [openGroup, setOpenGroup] = useState<AgeGroup | null>("hockey-school");
@@ -24,7 +55,7 @@ export default function PracticeAccordion({ rows, locale }: { rows: PracticeRow[
   }, {} as Record<AgeGroup, PracticeRow[]>);
 
   return (
-    <div className="space-y-2">
+    <div className="rounded-xl border border-surface-700 overflow-hidden divide-y divide-surface-700">
       {AGE_GROUP_ORDER.map((group) => {
         const sessions = grouped[group];
         if (!sessions.length) return null;
@@ -34,43 +65,41 @@ export default function PracticeAccordion({ rows, locale }: { rows: PracticeRow[
           .find((n) => n.length > 0) ?? null;
 
         return (
-          <div key={group} className="rounded-xl border border-surface-700 overflow-hidden">
+          <div key={group}>
             <button
               type="button"
               onClick={() => setOpenGroup(isOpen ? null : group)}
-              className="w-full flex items-center justify-between px-5 py-4 bg-surface-800/50 hover:bg-surface-800 transition-colors cursor-pointer"
+              className="w-full flex items-center justify-between px-5 py-4 bg-surface-800/40 hover:bg-surface-800/80 transition-colors duration-150 cursor-pointer"
             >
               <span className="font-heading text-sm uppercase tracking-[0.2em] text-vojvodina-red">
                 {t(`ageGroups.${group}`)}
               </span>
-              <span
-                className={cn(
-                  "inline-block w-0 h-0 border-l-4 border-r-4 border-t-[6px] border-l-transparent border-r-transparent border-t-surface-400 transition-transform duration-200",
-                  isOpen && "rotate-180"
-                )}
-              />
+              <ChevronIcon open={isOpen} />
             </button>
 
-            {isOpen && (
-              <div>
-                <div className="overflow-x-auto">
-                  <table className="min-w-full divide-y divide-surface-700">
-                    <thead className="bg-surface-800">
+            <div
+              className="grid transition-[grid-template-rows] duration-300 ease-in-out"
+              style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
+            >
+              <div className="overflow-hidden">
+                <div className="overflow-x-auto border-t border-surface-700/60">
+                  <table className="min-w-full divide-y divide-surface-700/60">
+                    <thead className="bg-surface-800/60">
                       <tr>
-                        <th className="px-4 py-3 text-left font-heading text-xs uppercase tracking-[0.2em] text-vojvodina-red">
+                        <th className="px-5 py-3 text-left font-heading text-xs uppercase tracking-[0.2em] text-vojvodina-red">
                           {t("table.day")}
                         </th>
-                        <th className="px-4 py-3 text-left font-heading text-xs uppercase tracking-[0.2em] text-vojvodina-red">
+                        <th className="px-5 py-3 text-left font-heading text-xs uppercase tracking-[0.2em] text-vojvodina-red">
                           {t("table.time")}
                         </th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-surface-700/60">
+                    <tbody className="divide-y divide-surface-700/40">
                       {sessions.map((r) => {
                         const isToday = r.dayOfWeek === todayKey;
                         return (
                           <tr key={r._id} className={isToday ? "bg-vojvodina-red/10" : ""}>
-                            <td className="px-4 py-4 font-heading uppercase tracking-widest text-sm text-surface-50">
+                            <td className="px-5 py-3.5 font-heading uppercase tracking-widest text-sm text-surface-50">
                               {t(`days.${r.dayOfWeek}`)}
                               {isToday && (
                                 <span className="ml-2 rounded-full bg-vojvodina-red text-vojvodina-light px-2 py-0.5 text-[10px] uppercase tracking-widest">
@@ -78,7 +107,7 @@ export default function PracticeAccordion({ rows, locale }: { rows: PracticeRow[
                                 </span>
                               )}
                             </td>
-                            <td className="px-4 py-4 text-surface-50">
+                            <td className="px-5 py-3.5 text-surface-50 tabular-nums">
                               {r.startTime} – {r.endTime}
                             </td>
                           </tr>
@@ -89,13 +118,13 @@ export default function PracticeAccordion({ rows, locale }: { rows: PracticeRow[
                 </div>
 
                 {noteText && (
-                  <div className="px-5 py-3 border-t border-surface-700/60 bg-vojvodina-red/5 flex items-start gap-2">
-                    <span className="text-vojvodina-red text-sm mt-0.5">ℹ</span>
-                    <p className="text-sm text-surface-50">{noteText}</p>
+                  <div className="px-5 py-3 border-t border-surface-700/60 bg-vojvodina-red/5 flex items-start gap-2.5">
+                    <InfoIcon />
+                    <p className="text-sm text-surface-100">{noteText}</p>
                   </div>
                 )}
               </div>
-            )}
+            </div>
           </div>
         );
       })}
