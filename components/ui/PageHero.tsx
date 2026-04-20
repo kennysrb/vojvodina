@@ -6,12 +6,14 @@ export default function PageHero({
   description,
   image = "/images/hero-bg.jpg",
   size = "md",
+  objectPosition = "center",
 }: {
   eyebrow: string;
   title: string;
   description?: string;
   image?: string;
   size?: "md" | "lg";
+  objectPosition?: string;
 }) {
   return (
     <div className={size === "lg" ? "relative h-96 md:h-[36rem] flex items-end" : "relative h-64 md:h-80 flex items-end"}>
@@ -20,7 +22,8 @@ export default function PageHero({
         alt=""
         fill
         priority
-        className="object-cover object-center"
+        className="object-cover"
+        style={{ objectPosition }}
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-vojvodina-dark/80" />
