@@ -9,10 +9,10 @@
     "address": "Pionir Ice Park, Čarli Čaplina 39, Belgrade"
   },
   "hero": {
-    "eyebrow": "Belgrade's finest hockey club",
-    "titleLine1": "CONES",
-    "titleLine2": "BELGRADE",
-    "lead": "Ice hockey at the heart of Belgrade. Passion, teamwork, and fair play since 2014.",
+    "eyebrow": "Vojvodina's hockey club",
+    "titleLine1": "VOJVODINA",
+    "titleLine2": "HC",
+    "lead": "Ice hockey at the heart of Vojvodina. Passion, teamwork, and fair play since 2014.",
     "ctaPrimary": "Join the team",
     "ctaSecondary": "Learn more",
     "stats": { "yearsLabel": "Years of history", "membersLabel": "Members", "matchesLabel": "Matches played" }
@@ -20,12 +20,12 @@
   "about": {
     "eyebrow": "About the club",
     "title": "Passion on the ice, community off it",
-    "description": "Founded in 2014, Cones Belgrade is a club that stands behind every player — whether a veteran or lacing up skates for the first time.",
+    "description": "Founded in 2014, Vojvodina HC is a club that stands behind every player — whether a veteran or lacing up skates for the first time.",
     "pillars": {
       "passionTitle": "Passion", "passionText": "Every practice, every game — no compromises.",
       "unityTitle": "Team", "unityText": "We play for each other, above all else.",
       "fairTitle": "Fair play", "fairText": "We respect opponents, referees, and the game.",
-      "communityTitle": "Community", "communityText": "A club connecting generations of Belgrade hockey."
+      "communityTitle": "Community", "communityText": "A club connecting generations of Vojvodina hockey."
     }
   },
   "gallery": { "eyebrow": "Action shots", "title": "Game Gallery", "viewAll": "View all" },
@@ -40,7 +40,7 @@
   "common": { "readMore": "Read more", "loading": "Loading…" },
   "newsPage": {
     "eyebrow": "News",
-    "title": "Latest from Cones Belgrade",
+    "title": "Latest from Vojvodina HC",
     "description": "Matches, tournaments, new jerseys, and stories from the club.",
     "filters": { "all": "All", "tournament": "Tournaments", "club": "Club", "roster": "Roster", "match": "Matches", "community": "Community" },
     "empty": "No news yet. Check back soon."
