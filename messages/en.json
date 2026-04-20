@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Home", "news": "News", "events": "Events", "history": "History", "join": "Join" },
+  "nav": { "home": "Home", "news": "News", "events": "Events", "history": "History", "school": "School", "hockey": "Hockey", "join": "Join" },
   "footer": {
     "tagline": "Hockey. Team. Vojvodina.",
     "quickLinks": "Quick links",
@@ -130,6 +130,98 @@
     "p2": "HKV is part of the Vojvodina Sports Society. We have been champions of SR Yugoslavia six times, once of Serbia and Montenegro (2003/04), and have won the SR Yugoslavia Cup three times. In 2009, we won the regional Pannonian League.",
     "p3": "The club suffered a devastating blow in March 2009 when a major fire at the SPENS ice arena destroyed the club premises and locker rooms, along with the senior team's complete equipment — which was competing in the playoff finals at the time. As a result, the club was inactive until 2015, when members of 'HK GentlemeNS', originally the veterans' section of Novi Sad's red and whites, revived the club. Since 2015, HKV has competed once again in the senior championship of Serbia.",
     "p4": "The club marked its 65th anniversary as the recipient of the November Charter, awarded by the City of Novi Sad for outstanding results and achievements — a recognition of decades of work in preserving the sporting spirit, teamwork, and competitive excellence. HK Vojvodina crowned that chapter by winning the Serbian senior championship title in the 2021/2022 season."
+  },
+  "school": {
+    "eyebrow": "Junior programme",
+    "title": "Hockey School",
+    "heroDescription": "200+ junior players. Skating, teamwork, and values that last a lifetime.",
+    "intro1": "Throughout all these years of our existence, HKV has developed many successful generations of hockey players — boys and girls alike.",
+    "intro2": "Sport is an educational and social activity that enriches children's upbringing and prepares them for roles and responsibilities in adulthood. Engaging in sport from an early age has a positive impact on children's mental, physical, and socio-emotional development. We are proud that our junior category has more than 200 girls and boys who are motivated to train, compete, socialise, and grow — learning through sport the skills they will carry into later life.",
+    "intro3": "Our goal is to motivate children to pursue this sport, teach them teamwork and the values we share, skating technique, the rules of the game, and all skills needed for successful play and development. Young hockey players compete in matches tailored to their age and abilities, learning through competition how to approach both victories and defeats with sportsmanship.",
+    "benefitsTitle": "How sport shapes children",
+    "benefits": [
+      { "icon": "motor", "text": "Improves motor and coordination skills" },
+      { "icon": "social", "text": "Develops better social skills" },
+      { "icon": "discipline", "text": "Teaches commitment and discipline" },
+      { "icon": "success", "text": "Builds a drive to achieve and excel" },
+      { "icon": "confidence", "text": "Strengthens self-confidence" }
+    ],
+    "ctaTitle": "First 3 classes — free",
+    "ctaText": "Bring your children to the first three classes free of charge. Let them get acquainted with the team and decide for themselves — unforgettable moments of learning, training, competition, and shared values await them, the same values HKV has been nurturing for over 65 years.",
+    "ctaButton": "Book a free class"
+  },
+  "hockey": {
+    "eyebrow": "Sport",
+    "title": "Ice Hockey",
+    "heroDescription": "Rules, equipment, and fun facts about the fastest team sport in the world.",
+    "rulesEyebrow": "Rules",
+    "rulesTitle": "Rules of the Game",
+    "rulesPlaceholder": "Detailed rules of the game will be published soon.",
+    "equipmentEyebrow": "Equipment",
+    "equipmentTitle": "Hockey Equipment",
+    "equipmentReqsTitle": "Three most important things about hockey equipment:",
+    "equipmentReqs": [
+      "Equipment must fit the player perfectly",
+      "Equipment must be in good condition",
+      "Equipment must be properly maintained"
+    ],
+    "equipmentBasicIntro": "The four essential pieces of equipment every hockey player must have:",
+    "skatesTitle": "Skates",
+    "skatesPoints": [
+      "Skates are the most important piece of equipment for an ice hockey player.",
+      "Never buy skates that are too small or too large — this can cause injury and hinder the player's progress in developing skating skills.",
+      "The skate size of a young player should match their shoe size."
+    ],
+    "glovesTitle": "Gloves",
+    "glovesBody1": "Field players wear the same gloves on both hands. They do not affect performance during the game but are important for protection against cold, puck impacts, stick hits, and injury prevention. Made from synthetic materials that absorb impact energy and allow a better grip on the stick. They have a thumb reinforcement that protects against thumb injuries when gripping the stick or falling.",
+    "glovesBody2": "Goalkeepers wear different gloves on each hand. On the stick hand, the goalkeeper wears a blocker — a strong, wide shield on the forearm extending into a glove. The blocker glove cannot be wider than 8 inches or longer than 15 inches. On the other hand, the goalkeeper wears a catching glove called a trapper, with a webbing pocket at the bottom for securing the puck. The circumference of this glove is limited to 45 inches, its widest part to 8 inches.",
+    "glovesPoints": [
+      "Gloves should fit the player's hands, feel comfortable, and not be too tight.",
+      "Gloves should overlap with elbow and forearm pads through the full range of motion.",
+      "The padding on the top of the glove must protect the hand from potential injuries."
+    ],
+    "helmetTitle": "Helmet",
+    "helmetBody": "Worn correctly, the bottom rim must not be more than one finger above the eyebrows, and the chin strap must be adjusted so that only one finger can fit between it and the chin. Wearing a helmet during play is mandatory.",
+    "helmetSteps": [
+      "Loosen the helmet and spread it open.",
+      "Place it on the head and adjust the parts so it fits snugly.",
+      "Tighten the screws while the helmet is on the head."
+    ],
+    "stickTitle": "Stick",
+    "stickBody": "Sticks are L-shaped and can be made of wood, aluminium, or plastic. The shaft is made of wood or metal and must not exceed 140 cm. All edges of the stick must be bevelled, but no more than 1.5 cm. The blade must not be longer than 32 cm or wider than 8 cm. A goalkeeper's stick blade can be up to 39 cm long and 9 cm wide.",
+    "stickPoints": [
+      "The correct stick height should reach the player's chin when standing upright on skates.",
+      "Young players should use junior sticks — they are lighter, have narrower blades, shorter paddles, and more flexibility.",
+      "The full blade of the stick should rest flat on the ice when the player is in the starting position."
+    ],
+    "puckTitle": "Puck",
+    "puckBody": "Made from vulcanised rubber, a material approved by the IIHF. It weighs between 156–170 grams, is 2.54 cm thick and 7.62 cm in diameter. A puck can reach speeds of over 150 km/h.",
+    "additionalTitle": "Additional Equipment",
+    "additionalIntro": "Additional protective equipment is essential to reduce the risk of player injury.",
+    "additionalItems": [
+      "Neck guard — reduces the risk of injury from pucks or skate blades.",
+      "Shoulder pads — protect the chest, ribs, solar plexus, and shoulders from pucks and collisions.",
+      "Elbow pads — protect the forearm, triceps, and elbow joint; adjustable.",
+      "Hockey jersey — colour-coded and numbered for player and team identification.",
+      "Hockey pants — knee-length pants with padding for the thighs, hips, and tailbone.",
+      "Jockstrap / pelvic protector — protective cup for protection of the groin area.",
+      "Garter belt — elastic strap used to hold up hockey socks.",
+      "Shin guards — hard plastic shell protecting the knee and front of the leg.",
+      "Hockey socks — cover shin guards and are a mandatory part of the uniform.",
+      "Mouthguard — prevents dental and jaw injuries."
+    ],
+    "additionalClosing": "For a good game, nothing beats every player staying injury-free — the best part of the game alongside winning.",
+    "equipmentImageAlt": "Hockey equipment — part labels",
+    "factsEyebrow": "Fun Facts",
+    "factsTitle": "Interesting Facts About Hockey",
+    "facts": [
+      "Ice hockey evolved from ancient stick-and-ball games played for centuries in northern Europe and among indigenous peoples of North America. European settlers brought this pastime to Canada, and with ideal conditions for the sport, hockey became a game played worldwide.",
+      "The first Olympic hockey tournament was held in Antwerp in 1920 as part of the Summer Olympics. Since 1924, hockey has been part of the Winter Olympics. The first women's tournament was held in Nagano in 1998.",
+      "Ice hockey is a team sport played on natural or artificial ice. Players move on skates reaching speeds of up to 40 km/h, making hockey one of the most dynamic and fastest team sports in the world.",
+      "Two teams of 6 players (including a goalkeeper) compete to hit the opponent's goal with a vulcanised rubber disc called a puck. Players control the puck with a long stick curved at the bottom.",
+      "The invention of artificial ice sparked the global expansion of hockey. It is by far the most popular sport in Canada, where it holds national sport status and was first standardised as a competitive discipline — which is why modern hockey is often called 'Canadian hockey'.",
+      "The sport is governed by the International Ice Hockey Federation (IIHF), which has 68 member nations and organises World Championship and Olympic tournaments. The most successful national teams are Canada, Russia, USA, Czech Republic, Finland, Slovakia, and Sweden."
+    ]
   },
   "notFound": {
     "title": "Page not found",

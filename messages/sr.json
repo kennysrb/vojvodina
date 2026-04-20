@@ -4,6 +4,8 @@
     "news": "Vesti",
     "events": "Događaji",
     "history": "Istorijat",
+    "school": "Škola",
+    "hockey": "Hokej",
     "join": "Pridruži se"
   },
   "footer": {
@@ -140,6 +142,98 @@
     "p2": "HKV je deo Sportskog društva Vojvodina. Šest puta smo bili prvaci SR Jugoslavije, jednom Srbije i Crne Gore (2003/04), i tri puta smo osvajali pehar pobednika Kupa SR Jugoslavije. U 2009. godini osvojili smo regionalnu Panonsku ligu.",
     "p3": "Klub je doživeo težak udarac u martu 2009. kada su u velikom požaru u ledenoj dvorani SPENS izgorele prostorije kluba i svlačionica sa kompletnom opremom seniorskog tima koji je u to vreme igrao finalnu seriju plej-ofa. Zbog ovog događaja klub je bio neaktivan do 2015. godine kada su članovi 'HK GentlemeNS', izvorno veteranske sekcije novosadskih crveno-belih, podržali rad kluba koji od 2015. godine ponovo igra u seniorskom šampionatu Srbije.",
     "p4": "Ove godine klub obeležava jubilej — 65 godina postojanja, i dobitnik je Novembarske povelje koju dodeljuje grad Novi Sad za izuzetne rezultate i dostignuća. Ovo priznanje dolazi kao potvrda dugogodišnjeg rada i zalaganja u očuvanju sportskog duha, kolektivizma i sportskog takmičenja. HK Vojvodina u sezoni 2021/2022 osvojio je titulu šampiona Srbije u seniorskoj konkurenciji."
+  },
+  "school": {
+    "eyebrow": "Juniorski program",
+    "title": "Škola hokeja",
+    "heroDescription": "200+ juniora. Klizanje, timski rad i vrednosti za ceo život.",
+    "intro1": "Tokom svih ovih godina koliko postojimo, HKV je izveo mnoge uspešne generacije hokejaša i hokejašica.",
+    "intro2": "Sport za decu predstavlja edukativnu i socijalnu aktivnost koja ulepšava njihovo odrastanje i priprema ih za uloge i odgovornosti u odraslom dobu. Bavljenje sportom u ranom uzrastu pozitivno utiče na mentalni, fizički i socio-emocionalni razvoj dece. Ponosni smo što u našoj juniorskoj kategoriji imamo više od 200 devojčica i dečaka koji su motivisani da treniraju, takmiče se, druže i odrastaju, i kroz sport uče mnoge veštine koje će im koristiti u starijem dobu.",
+    "intro3": "Naš cilj je da decu motivišemo za bavljenje ovim sportom, naučimo timskom radu, vrednostima koje zajedno negujemo, tehnikama klizanja, pravilima igre i svim ostalim veštinama potrebnim za uspešnu igru i razvoj. Mladi hokejaši igraju utakmice prilagođene njihovom uzrastu i sposobnostima, i kroz takmičenja uče kako se sportski odnosimo prema pobedama i porazima.",
+    "benefitsTitle": "Kako sport utiče na razvoj dece",
+    "benefits": [
+      { "icon": "motor", "text": "Poboljšava motoričke sposobnosti" },
+      { "icon": "social", "text": "Razvija bolje socijalne veštine" },
+      { "icon": "discipline", "text": "Uči decu disciplini i ispunjavanju obaveza" },
+      { "icon": "success", "text": "Razvija osećaj težnje ka uspehu" },
+      { "icon": "confidence", "text": "Razvija i jača samopouzdanje" }
+    ],
+    "ctaTitle": "Prva 3 časa — besplatno",
+    "ctaText": "Dovedite decu na tri prva besplatna časa, kako bi se upoznali i odlučili da se pridruže timu juniora — gde ih čekaju nezaboravni momenti učenja, treninga, takmičenja, radosti uspeha i deljenja zajedničkih vrednosti kojima težimo više od 65 godina koliko postoji HKV.",
+    "ctaButton": "Zakaži besplatan čas"
+  },
+  "hockey": {
+    "eyebrow": "Sport",
+    "title": "Hokej na ledu",
+    "heroDescription": "Pravila, oprema i zanimljivosti o najbrže ekipnom sportu na svetu.",
+    "rulesEyebrow": "Pravila",
+    "rulesTitle": "Pravila igre",
+    "rulesPlaceholder": "Detaljna pravila igre biće objavljena uskoro.",
+    "equipmentEyebrow": "Oprema",
+    "equipmentTitle": "Hokejaška oprema",
+    "equipmentReqsTitle": "Tri najvažnije stvari kada je u pitanju oprema:",
+    "equipmentReqs": [
+      "Oprema treba da odgovara igraču u potpunosti",
+      "Oprema mora da bude u dobrom stanju",
+      "Oprema mora da je održavana pravilno"
+    ],
+    "equipmentBasicIntro": "Osnovna četiri dela opreme koje je neophodno da ima svaki hokejaš:",
+    "skatesTitle": "Klizaljke",
+    "skatesPoints": [
+      "Klizaljke su najvažniji deo opreme igrača hokeja na ledu.",
+      "Nikada ne kupujte male ili velike klizaljke, jer to može dovesti do povrede i ometati igrača da napreduje u savladavanju veštine klizanja.",
+      "Veličina klizaljki mladog igrača trebalo bi da je ista kao i veličina njegovih cipela."
+    ],
+    "glovesTitle": "Rukavice",
+    "glovesBody1": "Igrači u polju nose iste rukavice na obe ruke. One ne utiču na njihove performanse tokom utakmice, ali su značajne kao vid zaštite od hladnoće, udaraca paka ili palice, prevencije od povrede. Prave od sintetičkih materijala koji apsorbuju energiju udara i obezbeđuju lakše držanje štapa. Imaju ojačanje na palcu koje štiti od povreda palca prilikom držanja štapa ili pada.",
+    "glovesBody2": "Golmani nose različite rukavice na svakoj ruci. Na ruci u kojoj drži štap golman nosi bloker — snažan i širok kostobran na podlaktici koji se produžava u rukavicu. Golmanska rukavica sa blokerom ne može biti šira od 8 inča i duža od 15 inča. Na drugoj ruci golman nosi traper — rukavicu za hvatanje sa mrežicom na dnu. Obim ove rukavice ograničen je na 45 inča, njen najširi deo na 8 inča.",
+    "glovesPoints": [
+      "Rukavice treba da pristaju igračevim rukama, budu udobne i ne stežu.",
+      "Rukavice treba da se preklapaju sa štitnicima za lakat i podlakticu, kroz čitav niz pokreta.",
+      "Punjenje koje se nalazi na gornjem delu rukavice treba da bude takvo da štiti ruku od mogućih povreda."
+    ],
+    "helmetTitle": "Kaciga",
+    "helmetBody": "Pravilno se nosi tako da njen donji rub ne sme biti više od jednog prsta iznad obrva, a remen kojim se veže na bradi mora biti namešten tako da samo jedan prst može proći u prostor između njega i brade. Nošenje kacige tokom igre je obavezno.",
+    "helmetSteps": [
+      "Olabavite kacigu i raširite je.",
+      "Postavite je na glavu i namestite delove kako bi se priljubila uz glavu.",
+      "Zategnite šrafove dok se kaciga nalazi na glavi."
+    ],
+    "stickTitle": "Štap",
+    "stickBody": "Palice imaju oblik slova 'L' i mogu biti: drvene, aluminijumske, plastične. Drška je napravljena od drveta ili metala i ne sme biti duža od 140 cm. Svi rubovi štapa moraju biti nakošeni, ali ne više od 1,5 cm. Deo štapa namenjen za udarce ne sme biti duži od 32 cm i širi od 8 cm. Golmanova palica može biti duga do 39 cm i šira do 9 cm.",
+    "stickPoints": [
+      "Pravilna visina štapa bi trebalo da igraču dodiruje bradu dok igrač stoji uspravno na klizaljkama.",
+      "Mladi igrači treba da koriste juniorske štapove — lakše su, imaju uže palice, kraće lopatice i veću fleksibilnost.",
+      "Lopatica štapa treba cela da bude oslonjena na led dok je igrač u početnom položaju."
+    ],
+    "puckTitle": "Pak",
+    "puckBody": "Napravljen je od vulkanizirane gume, materijala koji je odobrila IIHF. Njegova težina je između 156–170 grama, debljine 2,54 cm i dijametra 7,62 cm. Pak može postići brzinu veću od 150 km/h.",
+    "additionalTitle": "Dodatna oprema",
+    "additionalIntro": "Dodatna oprema je od izuzetne važnosti kako bi se smanjila mogućnost povrede igrača.",
+    "additionalItems": [
+      "Štitnik za vrat — smanjuje mogućnost povrede pakom ili oštricom klizaljke.",
+      "Jastučići za ramena — štite prsa, rebra, pleksus i ramena od letećih pakova i sudara.",
+      "Jastučići za laktove — štite podlakticu, triceps i lakatni zglob, podesivi su.",
+      "Hokejaški dres — označen bojama i numerisan za identifikaciju igrača i timova.",
+      "Hokejaške pantalone — pantalone do kolena s jastučićima bedara, kuka i repne kosti.",
+      "Suspenzor — zaštitna čaša za zaštitu polnog dela tela.",
+      "Podvezica — elastična traka za zadržavanje hokejaške čarape.",
+      "Štitnici za potkolenice — tvrda plastična školjka koja štiti koleno i frontalnu kost noge.",
+      "Hokejaške čarape — pokrivaju štitnik potkoljenice i obavezan su deo uniforme.",
+      "Štitnik za zube — sprečava povrede zuba i vilice."
+    ],
+    "additionalClosing": "Za dobru utakmicu ne postoji ništa bolje od toga da se niko od igrača nije povredio — što je najlepši deo utakmice uz pobedu.",
+    "equipmentImageAlt": "Hokejaška oprema — oznake delova",
+    "factsEyebrow": "Zanimljivosti",
+    "factsTitle": "Zanimljivosti o hokeju",
+    "facts": [
+      "Hokej na ledu razvio se iz drevnih igara sa štapom i loptom koje su se vekovima igrale u severnoj Evropi i među severnoameričkim domorocima. Evropski doseljenici u Kanadu doneli su ovaj vid zabave sa sobom, a povoljni vremenski uslovi učinili su hokej sportom koji se igra širom sveta.",
+      "Prvi hokejaški olimpijski turnir održan je u Antverpenu 1920. godine u okviru Letnjih olimpijskih igara. Od 1924. hokej je deo Zimskih olimpijskih igara. Prvi turnir za žene održan je u Naganu 1998. godine.",
+      "Hokej na ledu je ekipni sport koji se igra na prirodnim ili veštačkim ledenim površinama. Igrači se kreću klizaljkama postižući brzine i do 40 km/h, što hokej svrstava u najdinamičnije i najbrže ekipne sportove.",
+      "U igri učestvuju dve ekipe sa po 6 igrača (od kojih je jedan golman). Cilj igre je pogoditi protivnički gol pučicom od vulkanizirane gume — pakom. Igrači pakom upravljaju dugačkom palicom zakrivljenom na donjem delu.",
+      "Otkrićem veštačkog leda počinje ekspanzija hokeja kao sporta. Hokej je ubedljivo najpopularniji sport u Kanadi, gde uživa status nacionalnog sporta i gde je po prvi put standardizovan kao sportska disciplina — pa se savremeni hokej često označava kao 'kanadski hokej'.",
+      "Standardizaciju hokejaške igre vrši Svetska hokejaška asocijacija (IIHF) koja ima 68 članova i organizuje turnire u okviru svetskih prvenstava i olimpijskih igara. Najuspešnije reprezentacije su Kanada, Rusija, SAD, Češka, Finska, Slovačka i Švedska."
+    ]
   },
   "notFound": {
     "title": "Stranica nije pronađena",

@@ -17,6 +17,8 @@ export default function Nav() {
     { href: "/news" as const, label: t("news") },
     { href: "/events" as const, label: t("events") },
     { href: "/history" as const, label: t("history") },
+    { href: "/hockey-school" as const, label: t("school") },
+    { href: "/hockey" as const, label: t("hockey") },
   ];
 
   return (
