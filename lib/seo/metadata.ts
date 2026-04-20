@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import type { Locale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 
-export const SITE_URL = process.env.SITE_URL || "https://conesbelgrade.rs";
+export const SITE_URL = process.env.SITE_URL || "https://vojvodinahc.rs";
 
 const DEFAULTS = {
   sr: {
-    title: "Cones Belgrade — Hokejaški klub Beograd",
+    title: "Vojvodina HC — Hokejaški klub",
     description:
-      "Cones Belgrade je amaterski hokejaški klub iz Beograda. Treninzi, turniri, utakmice i zajednica od 2014. godine.",
+      "Vojvodina HC je amaterski hokejaški klub iz Beograda. Treninzi, turniri, utakmice i zajednica od 2014. godine.",
   },
   en: {
-    title: "Cones Belgrade — Belgrade Hockey Club",
+    title: "Vojvodina HC — Hockey Club",
     description:
-      "Cones Belgrade is an amateur ice hockey club from Belgrade, Serbia. Practices, tournaments, matches, and community since 2014.",
+      "Vojvodina HC is an amateur ice hockey club from Belgrade, Serbia. Practices, tournaments, matches, and community since 2014.",
   },
 } as const;
 
@@ -31,13 +31,13 @@ export function rootMetadata(locale: Locale, path = "/"): Metadata {
   const d = DEFAULTS[locale];
   return {
     metadataBase: new URL(SITE_URL),
-    title: { default: d.title, template: "%s · Cones Belgrade" },
+    title: { default: d.title, template: "%s · Vojvodina HC" },
     description: d.description,
     alternates: alternatesForPath(path),
     openGraph: {
       type: "website",
       locale: locale === "sr" ? "sr_RS" : "en_US",
-      siteName: "Cones Belgrade",
+      siteName: "Vojvodina HC",
       title: d.title,
       description: d.description,
       url: `${SITE_URL}${locale === "sr" ? "" : `/${locale}`}${path}`,

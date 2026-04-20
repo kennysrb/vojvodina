@@ -5,7 +5,7 @@ export function sportsTeamJsonLd(locale: Locale) {
   return {
     "@context": "https://schema.org",
     "@type": "SportsTeam",
-    name: "Cones Belgrade",
+    name: "Vojvodina HC",
     sport: "Ice hockey",
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
@@ -56,7 +56,7 @@ export function newsArticleJsonLd({
     mainEntityOfPage: url,
     publisher: {
       "@type": "Organization",
-      name: "Cones Belgrade",
+      name: "Vojvodina HC",
       logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
     },
   };
