@@ -15,8 +15,8 @@ export default function CtaBand() {
           <p className="mt-3 text-surface-100 max-w-xl">{t("description")}</p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-          <Button href="/events" variant="primary" size="lg" className="text-center justify-center">{t("primary")}</Button>
-          <Button href="/events" variant="outline" size="lg" className="text-center justify-center">{t("secondary")}</Button>
+          <Button href="/events#rsvp" variant="primary" size="lg" className="text-center justify-center">{t("primary")}</Button>
+          <Button href="/events?tab=schedule" variant="outline" size="lg" className="text-center justify-center">{t("secondary")}</Button>
         </div>
       </Reveal>
     </section>

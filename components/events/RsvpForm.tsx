@@ -50,7 +50,7 @@ export default function RsvpForm() {
   }
 
   return (
-    <section className="mt-20 rounded-xl border border-surface-700 bg-surface-800/60 p-8 md:p-12">
+    <section id="rsvp" className="mt-20 rounded-xl border border-surface-700 bg-surface-800/60 p-8 md:p-12">
       <header className="max-w-xl">
         <h2 className="font-display text-4xl md:text-5xl text-surface-50">{t("title")}</h2>
         <p className="mt-2 text-surface-200">{t("description")}</p>

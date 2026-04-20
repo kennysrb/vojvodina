@@ -53,10 +53,14 @@ function toItem(d: EventDoc): EventItem {
 
 export default async function EventsPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: Locale }>;
+  searchParams: Promise<{ tab?: string }>;
 }) {
   const { locale } = await params;
+  const { tab } = await searchParams;
+  const initialTab = tab === "schedule" ? "schedule" : tab === "past" ? "past" : "upcoming";
   setRequestLocale(locale);
   const t = await getTranslations("events");
 
@@ -72,7 +76,7 @@ export default async function EventsPage({
     <div className="mx-auto max-w-container px-6 py-20">
       <SectionHeading eyebrow={t("eyebrow")} title={t("title")} description={t("description")} />
       <div className="mt-12">
-        <EventsTabs upcoming={upcoming.map(toItem)} past={past.map(toItem)} schedule={schedule} />
+        <EventsTabs upcoming={upcoming.map(toItem)} past={past.map(toItem)} schedule={schedule} initialTab={initialTab} />
       </div>
       <RsvpForm />
     </div>

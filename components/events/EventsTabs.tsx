@@ -13,14 +13,16 @@ export default function EventsTabs({
   upcoming,
   past,
   schedule,
+  initialTab = "upcoming",
 }: {
   upcoming: EventItem[];
   past: EventItem[];
   schedule: PracticeRow[];
+  initialTab?: Tab;
 }) {
   const locale = useLocale() as Locale;
   const t = useTranslations("events");
-  const [tab, setTab] = useState<Tab>("upcoming");
+  const [tab, setTab] = useState<Tab>(initialTab);
   const tabs: Tab[] = ["upcoming", "schedule", "past"];
 
   return (
