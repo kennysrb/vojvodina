@@ -127,6 +127,15 @@
     "title": "Istorijat",
     "heroDescription": "Devetostruki prvaci države. Osnovani 1957. Uvek napred.",
     "trophiesTitle": "Trofeji",
+    "structureTitle": "Struktura članova kluba",
+    "structureDesc": "Osnovni ciljevi članova HK Vojvodina je ostvarivanje planova i programa razvoja, promocija hokeja na ledu, stvaranje uslova za postizanje odličnih rezultata, unapređenje stručno-pedagoškog rada u oblasti hokejaškog sporta, promovisanje kulture sporta.",
+    "roles": {
+      "president": "Predsednik",
+      "vicePresident": "Zamenik predsednika",
+      "board": "Upravni odbor",
+      "secretary": "Sekretar",
+      "members": "Članovi kluba"
+    },
     "p1": "Hokejaški klub Vojvodina iz Novog Sada osnovan je 1957. godine i kao devetostruki prvak države, uvek je težio da kroz posvećen, organizovan pristup pokaže svoje liderstvo kada je ovaj sport u pitanju.",
     "p2": "HKV je deo Sportskog društva Vojvodina. Šest puta smo bili prvaci SR Jugoslavije, jednom Srbije i Crne Gore (2003/04), i tri puta smo osvajali pehar pobednika Kupa SR Jugoslavije. U 2009. godini osvojili smo regionalnu Panonsku ligu.",
     "p3": "Klub je doživeo težak udarac u martu 2009. kada su u velikom požaru u ledenoj dvorani SPENS izgorele prostorije kluba i svlačionica sa kompletnom opremom seniorskog tima koji je u to vreme igrao finalnu seriju plej-ofa. Zbog ovog događaja klub je bio neaktivan do 2015. godine kada su članovi 'HK GentlemeNS', izvorno veteranske sekcije novosadskih crveno-belih, podržali rad kluba koji od 2015. godine ponovo igra u seniorskom šampionatu Srbije.",

@@ -142,16 +142,18 @@ export default async function HistoryPage({
               {TROPHIES.map((group) => (
                 <div key={group.category.en}>
                   {/* Category header */}
-                  <div className="grid grid-cols-[1fr_80px_1fr] items-center bg-vojvodina-dark px-6 py-4 gap-4">
+                  <div className="flex items-center justify-between bg-vojvodina-dark px-6 py-4">
                     <span className="font-heading text-xs uppercase tracking-[0.25em] text-vojvodina-light/80">
                       {group.category[l]}
                     </span>
-                    <span className="flex items-center justify-center">
-                      <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-vojvodina-red text-vojvodina-light font-display text-lg">
-                        {group.total}
-                      </span>
+                    <span className="flex items-center gap-2 text-vojvodina-light/80">
+                      <span className="font-display text-2xl leading-none text-vojvodina-light">{group.total}</span>
+                      <span className="font-heading text-base leading-none tracking-widest self-center">×</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="text-vojvodina-red self-center">
+                        <path d="M19 3H5v7a7 7 0 0 0 5.95 6.925V19H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2h-1.95v-2.075A7 7 0 0 0 19 10V3Z"/>
+                        <path d="M3 6a1 1 0 0 0-1 1v2a4 4 0 0 0 3.98 4H6a9 9 0 0 1-.971-3.757L5 9V7a1 1 0 0 0-1-1H3ZM21 6h-1a1 1 0 0 0-1 1v2l-.029.243A9 9 0 0 1 18 13h.02A4 4 0 0 0 22 9V7a1 1 0 0 0-1-1Z"/>
+                      </svg>
                     </span>
-                    <span />
                   </div>
 
                   {/* Competition rows */}
@@ -185,6 +187,44 @@ export default async function HistoryPage({
             </div>
           </div>
         </Reveal>
+
+        {/* Club structure */}
+        <Reveal>
+          <div className="space-y-8">
+            <div>
+              <h2 className="font-display text-5xl md:text-6xl uppercase text-surface-50 mb-4">
+                {t("structureTitle")}
+              </h2>
+              <p className="max-w-3xl text-base leading-relaxed text-surface-200">
+                {t("structureDesc")}
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-surface-700 overflow-hidden divide-y divide-surface-700">
+              {[
+                { role: t("roles.president"), names: ["Marko Nikolić"] },
+                { role: t("roles.vicePresident"), names: ["Stefan Petrović"] },
+                { role: t("roles.board"), names: ["Aleksa Jovanović", "Nikola Đorđević", "Ivan Milošević"] },
+                { role: t("roles.secretary"), names: ["Milan Popović"] },
+                { role: t("roles.members"), names: ["Nemanja Savić", "Dušan Marković", "Lazar Stanković", "Miloš Vuković", "Andrej Ilić"] },
+              ].map(({ role, names }) => (
+                <div key={role} className="grid md:grid-cols-[220px_1fr] items-start gap-4 px-6 py-4 hover:bg-surface-800/30 transition-colors">
+                  <span className="font-heading text-xs uppercase tracking-[0.2em] text-vojvodina-red pt-0.5 shrink-0">
+                    {role}
+                  </span>
+                  <div className="flex flex-wrap gap-2">
+                    {names.map((name) => (
+                      <span key={name} className="text-sm text-surface-100 bg-surface-800/60 border border-surface-700/60 rounded-md px-3 py-1">
+                        {name}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+
       </div>
     </>
   );
