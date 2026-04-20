@@ -24,7 +24,7 @@ export default function PageHero({
         className="absolute inset-0 opacity-60"
         style={{
           background:
-            "radial-gradient(ellipse at top left, rgba(0,173,241,0.2) 0%, transparent 60%)",
+            "radial-gradient(ellipse at top left, rgba(237,50,55,0.2) 0%, transparent 60%)",
         }}
       />
       <div className="relative mx-auto w-full max-w-container px-6 pb-10" style={{ zIndex: 1 }}>

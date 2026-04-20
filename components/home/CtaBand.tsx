@@ -7,7 +7,7 @@ export default function CtaBand() {
   return (
     <section
       className="py-20 border-t border-surface-700/60"
-      style={{ background: "linear-gradient(135deg, rgba(0,173,241,0.15), rgba(247,148,28,0.12))" }}
+      style={{ background: "linear-gradient(135deg, rgba(237,50,55,0.15), rgba(237,50,55,0.08))" }}
     >
       <Reveal className="mx-auto max-w-container px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div>

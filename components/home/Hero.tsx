@@ -33,7 +33,7 @@ export default function Hero({
           aria-hidden
           className="absolute inset-0 opacity-70"
           style={{
-            background: "radial-gradient(ellipse at top, rgba(0,173,241,0.25) 0%, transparent 55%), radial-gradient(ellipse at bottom right, rgba(247,148,28,0.18) 0%, transparent 60%)",
+            background: "radial-gradient(ellipse at top, rgba(237,50,55,0.25) 0%, transparent 55%), radial-gradient(ellipse at bottom right, rgba(237,50,55,0.12) 0%, transparent 60%)",
           }}
         />
       </div>
