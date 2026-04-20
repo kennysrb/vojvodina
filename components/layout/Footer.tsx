@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="mx-auto max-w-container px-6 py-16 grid gap-10 md:grid-cols-4">
         <div>
           <p className="font-display text-3xl text-surface-50">
-            CONES <span className="text-vojvodina-light">BELGRADE</span>
+            VOJVO<span className="text-vojvodina-light">DINA</span>
           </p>
           <p className="mt-3 text-surface-200 text-sm leading-relaxed">
             {tF("tagline")}
@@ -85,7 +85,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-surface-700/60 py-4 text-center text-xs text-surface-300">
-        © {year} Cones Belgrade. {tF("rights")}
+        © {year} Vojvodina HC. {tF("rights")}
       </div>
     </footer>
   );

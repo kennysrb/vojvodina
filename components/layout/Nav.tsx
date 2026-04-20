@@ -23,9 +23,9 @@ export default function Nav() {
       <header className="sticky top-0 z-50 border-b border-surface-700/60 bg-vojvodina-dark/80 backdrop-blur-md" style={{ height: "72px" }}>
         <div className="mx-auto flex h-full max-w-container items-center justify-between px-6">
           <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-            <Image src="/logo.png" alt="Cones Belgrade" width={40} height={40} className="h-10 w-10 object-contain" />
+            <Image src="/logo.png" alt="Vojvodina HC" width={40} height={40} className="h-10 w-10 object-contain" />
             <span className="font-display text-2xl tracking-wide text-surface-50">
-              CONES <span className="text-vojvodina-light">BELGRADE</span>
+              VOJVO<span className="text-vojvodina-light">DINA</span>
             </span>
           </Link>
 
