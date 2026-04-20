@@ -8,10 +8,11 @@ import Lightbox from "@/components/ui/Lightbox";
 
 const LOCAL_GALLERY = [
   "/images/gallery/gallery-1.jpg",
-  "/images/gallery/gallery-2.jpg",
-  "/images/gallery/gallery-3.jpg",
-  "/images/gallery/gallery-4.jpg",
+  "/images/gallery/gallery-2.png",
+  "/images/gallery/gallery-3.png",
+  "/images/gallery/gallery-4.png",
   "/images/gallery/gallery-5.jpg",
+  "/images/gallery/gallery-6.jpg",
 ];
 
 // 4-image mosaic: big left (row-span-2) + top-right + 2 bottom-right
