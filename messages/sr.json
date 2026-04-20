@@ -140,9 +140,16 @@
     "role": "Ja sam",
     "roles": {
       "player": "Igrač",
-      "beginner": "Početnik",
-      "fan": "Navijač",
       "parent": "Roditelj"
+    },
+    "age": "Godine",
+    "experience": "Nivo iskustva",
+    "experienceLevels": {
+      "placeholder": "Izaberi nivo",
+      "none": "Bez iskustva",
+      "beginner": "Početnik",
+      "intermediate": "Srednji nivo",
+      "advanced": "Napredno"
     },
     "message": "Poruka",
     "submit": "Pošalji prijavu",

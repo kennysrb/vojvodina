@@ -14,7 +14,7 @@ export default function Select({ label, name, children, hint, error, className, 
   return (
     <div className="flex flex-col gap-1.5">
       <label htmlFor={id} className="font-heading text-xs uppercase tracking-[0.2em] text-surface-200">
-        {label}{required && <span className="text-vojvodina-light"> *</span>}
+        {label}{required && <span className="text-vojvodina-red"> *</span>}
       </label>
       <select
         id={id}

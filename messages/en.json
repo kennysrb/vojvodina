@@ -131,9 +131,16 @@
     "role": "I am",
     "roles": {
       "player": "Player",
-      "beginner": "Beginner",
-      "fan": "Fan",
       "parent": "Parent"
+    },
+    "age": "Age",
+    "experience": "Experience level",
+    "experienceLevels": {
+      "placeholder": "Select level",
+      "none": "No experience",
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
     },
     "message": "Message",
     "submit": "Send request",

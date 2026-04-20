@@ -25,6 +25,8 @@ export default function RsvpForm() {
       email: String(fd.get("email") ?? ""),
       phone: String(fd.get("phone") ?? ""),
       role: String(fd.get("role") ?? "player"),
+      age: String(fd.get("age") ?? ""),
+      experience: String(fd.get("experience") ?? ""),
       message: String(fd.get("message") ?? ""),
       locale,
     };
@@ -59,9 +61,15 @@ export default function RsvpForm() {
         <Input label={t("phone")} name="phone" type="tel" error={fieldErrors.phone} />
         <Select label={t("role")} name="role" required error={fieldErrors.role} defaultValue="player">
           <option value="player">{t("roles.player")}</option>
-          <option value="beginner">{t("roles.beginner")}</option>
-          <option value="fan">{t("roles.fan")}</option>
           <option value="parent">{t("roles.parent")}</option>
+        </Select>
+        <Input label={t("age")} name="age" type="number" min={3} max={99} error={fieldErrors.age} />
+        <Select label={t("experience")} name="experience" error={fieldErrors.experience} defaultValue="">
+          <option value="" disabled>{t("experienceLevels.placeholder")}</option>
+          <option value="none">{t("experienceLevels.none")}</option>
+          <option value="beginner">{t("experienceLevels.beginner")}</option>
+          <option value="intermediate">{t("experienceLevels.intermediate")}</option>
+          <option value="advanced">{t("experienceLevels.advanced")}</option>
         </Select>
         <div className="md:col-span-2">
           <Textarea label={t("message")} name="message" rows={4} error={fieldErrors.message} />
